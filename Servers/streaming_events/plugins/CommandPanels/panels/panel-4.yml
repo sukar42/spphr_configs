@@ -1,0 +1,717 @@
+panels:
+  panel-4:
+    perm: event
+    rows: 6
+    title: '&8Gamemodes'
+    empty: BLACK_STAINED_GLASS_PANE
+    disabled-worlds:
+    - earth_the_end
+    - resources
+    - earth
+    - earth_nether
+    - hub
+    item:
+      '27':
+        material: COMPASS
+        stack: 1
+        name: 'Skygrid startgame'
+        lore:
+        - 'use only on skygrid maps'
+        commands:
+        - randomizer shuffle
+        - lp group events parent add event_quickstart
+        - delay= 40 lp group event_quickstart parent remove start_event
+        - execute as @a[gamemode=survival,distance=..50] run clear
+        - execute as @a[gamemode=survival,distance=..50] run rtp
+      '9':
+        material: sand
+        stack: 1
+        name: 'Voidrunner'
+        commands:
+        - worldfall start
+      '45':
+        material: fire_charge
+        stack: 1
+        name: 'Tps all players!!!! Bomberman arena setup'
+        lore:
+        - 'you must be flying or the tnt will spawn too low and trigger befor start'
+        commands:
+        - execute as @p run gamerule doWeatherCycle false
+        - execute as @p run gamerule doDaylightCycle false
+        - execute as @p run time set 1700
+        - execute as @p run weather clear      
+        - lp group events parent remove event_quickstart
+        - execute as @p run mvremove xEventxVoidworld
+        - execute as @p run mvremove xEventxMushroomArena
+        - execute as @p run mvremove xEventxPlanetoids
+        - execute as @p run mvremove xEventxDeepdarkgen
+        - execute as @p run mvremove xEventxVintagelobby
+        - execute as @p run mvremove xEventxSapphireArenas
+        - execute as @p run tp 0 151 0
+        - delay= 20 execute as @p run worldborder center ~ ~
+        - execute as @p run gamerule commandBlockOutput false
+        - delay= 170 mvsetspawn
+        - delay= 60 lp group start_event parent add event_personalspace
+        - execute as @p run mvmodify set pvp false
+        - execute as @p run mvm set diff normal
+        
+        
+        - execute as @p run gamerule doAdvancementAnnounce false
+        - delay= 170 execute as @p run setworldspawn
+        - execute as @p run gamerule spawnRadius 0
+        - execute as @p run gamerule doimmediaterespawn true
+        - execute as @p run gamerule spectatorsGenerateChunks false
+
+        - delay= 20 execute as @p run worldborder set 500
+        - delay= 20 execute as @p run setblock -4 144 0 minecraft:command_block{Command:"/place template minecraft:bbmansetup ~ ~ ~"}
+        - delay= 20 execute as @p run setblock -4 145 0 minecraft:observer[facing=up]
+        - delay= 30 execute as @p run tp 50 148 50
+        - delay= 40 fastasyncworldedit:/pos1
+        - delay= 45 execute as @p run tp -50 148 -50
+        - delay= 55 fastasyncworldedit:/pos2
+        - delay= 60 execute as @p run tp 0 151 0
+        
+        - delay= 70 fastasyncworldedit:/replace chiseled_polished_blackstone 5%tnt,95%chiseled_polished_blackstone
+        - delay= 120 execute as @p run tp 50 149 50
+        - delay= 130 fastasyncworldedit:/pos1
+        - delay= 140 execute as @p run tp -50 147 -50
+        - delay= 150 fastasyncworldedit:/pos2
+        - delay= 160 execute as @p run tp 0 151 0
+        
+        
+        - delay= 200 execute as @p run tp 80 200 80
+        - delay= 220 fastasyncworldedit:/pos1
+        - delay= 230 execute as @p run tp -80 -0 -80
+        - delay= 240 fastasyncworldedit:/pos2
+        - delay= 250 execute as @p run tp 0 151 0
+        - delay= 500 fastasyncworldedit:/setbiome mushroom_fields
+        
+        - delay= 500 execute as @p run mv purge event monsters
+        
+        - delay= 170 fastasyncworldedit:/replace chiseled_polished_blackstone 40%mud,30%chiseled_polished_blackstone,30%sculk
+        
+        - execute as @p run gamemode creative
+        
+        - delay= 260 execute as @p run tpall
+        
+        
+        - delay= 300 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -46
+        - delay= 301 minecraft:tp @r[gamemode=survival,distance=..20] -35 147 -46
+        - delay= 302 minecraft:tp @r[gamemode=survival,distance=..20] -26 147 -46
+        - delay= 303 minecraft:tp @r[gamemode=survival,distance=..20] -15 147 -46
+        - delay= 304 minecraft:tp @r[gamemode=survival,distance=..20] -5 147 -46
+        - delay= 305 minecraft:tp @r[gamemode=survival,distance=..20] 7 147 -46
+        - delay= 306 minecraft:tp @r[gamemode=survival,distance=..20] 17 147 -46
+        - delay= 307 minecraft:tp @r[gamemode=survival,distance=..20] 27 147 -46
+        - delay= 308 minecraft:tp @r[gamemode=survival,distance=..20] 37 147 -46
+        - delay= 309 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -46
+        
+        - delay= 310 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -35
+        - delay= 311 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -25
+        - delay= 312 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -15
+        - delay= 313 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -5
+        - delay= 314 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 7
+        - delay= 315 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 17
+        - delay= 316 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 27
+        - delay= 317 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 37
+        - delay= 318 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 47
+        
+        
+        - delay= 319 minecraft:tp @r[gamemode=survival,distance=..20] 37 147 47
+        - delay= 320 minecraft:tp @r[gamemode=survival,distance=..20] 27 147 47
+        - delay= 321 minecraft:tp @r[gamemode=survival,distance=..20] 17 147 47
+        - delay= 322 minecraft:tp @r[gamemode=survival,distance=..20] 7 147 47
+        - delay= 323 minecraft:tp @r[gamemode=survival,distance=..20] -5 147 47
+        - delay= 324 minecraft:tp @r[gamemode=survival,distance=..20] -15 147 47
+        - delay= 325 minecraft:tp @r[gamemode=survival,distance=..20] -26 147 47
+        - delay= 326 minecraft:tp @r[gamemode=survival,distance=..20] -35 147 47
+        - delay= 327 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 47
+        
+        
+        - delay= 328 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 37
+        - delay= 329 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 27
+        - delay= 330 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 17
+        - delay= 331 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 7
+        - delay= 332 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -5
+        - delay= 333 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -15
+        - delay= 334 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -25
+        - delay= 335 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -35
+        
+        - delay= 340 lp group start_event parent remove event_takedamage
+        - delay= 380 lp group start_event parent remove event_modifyworld
+        - delay= 450 lp group start_event parent remove event_useitems
+        
+        - delay= 400 execute as @p[gamemode=creative] run execute as @a[gamemode=survival,distance=..500] run clear
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.chest with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.feet with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.head with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.legs with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] weapon.offhand with minecraft:air
+        #- delay= 400 execute as @p[gamemode=creative] run effect clear @a
+        - delay= 450 execute as @p run heal *
+        - delay= 450 execute as @p run feed *
+        - delay= 450 execute as @p run give @a[gamemode=survival,distance=..500] apple 25
+        - delay= 450 execute as @p run give @a[gamemode=survival,distance=..500] tnt 200
+        - delay= 450 execute as @p run give @a[gamemode=survival,distance=..500] creeper_spawn_egg 10
+        
+        - delay= 540 tellraw @a[distance=..500] {"text":"5!","color":"green","bold":true}
+        - delay= 560 tellraw @a[distance=..500] {"text":"4!","color":"green","bold":true}
+        - delay= 580 tellraw @a[distance=..500] {"text":"3!","color":"green","bold":true}
+        - delay= 600 tellraw @a[distance=..500] {"text":"2!","color":"green","bold":true}
+        - delay= 620 tellraw @a[distance=..500] {"text":"1!","color":"green","bold":true}
+        - delay= 625 tellraw @a[distance=..500] {"text":"Start!","color":"green","bold":true}
+        - delay= 625 lp group events parent add event_quickstart
+      '46':
+        material: snowball
+        stack: 1
+        name: 'Tps all players!!!! Bomberman snow arena setup'
+        lore:
+        - 'you must be flying or the tnt will spawn too low and trigger befor start'
+        commands:
+        - execute as @p run gamerule doWeatherCycle false
+        - execute as @p run gamerule doDaylightCycle false
+        - execute as @p run time set 1700
+        - execute as @p run weather clear      
+        - lp group default events remove event_quickstart
+        - execute as @p run mvremove xEventxVoidworld
+        - execute as @p run mvremove xEventxMushroomArena
+        - execute as @p run mvremove xEventxPlanetoids
+        - execute as @p run mvremove xEventxDeepdarkgen
+        - execute as @p run mvremove xEventxVintagelobby
+        - execute as @p run mvremove xEventxSapphireArenas
+        - execute as @p run tp 0 151 0
+        - delay= 20 execute as @p run worldborder center ~ ~
+        - execute as @p run gamerule commandBlockOutput false
+        - delay= 170 execute as @p run mvsetspawn
+        - delay= 60 lp group start_event parent add event_personalspace
+        - execute as @p run mvmodify set pvp false
+        - execute as @p run mvm set diff normal
+        
+        
+        - execute as @p run gamerule doAdvancementAnnounce false
+        - delay= 170 execute as @p run setworldspawn
+        - execute as @p run gamerule spawnRadius 0
+        - execute as @p run gamerule doimmediaterespawn true
+        - execute as @p run gamerule spectatorsGenerateChunks false
+
+        - delay= 20 execute as @p run worldborder set 500
+        - delay= 20 execute as @p run setblock -4 144 0 minecraft:command_block{Command:"/place template minecraft:bbmansetupv2 ~ ~ ~"}
+        - delay= 20 execute as @p run setblock -4 145 0 minecraft:observer[facing=up]
+        - delay= 100 execute as @p run tp 80 200 80
+        - delay= 120 fastasyncworldedit:/pos1
+        - delay= 130 execute as @p run tp -80 -0 -80
+        - delay= 140 fastasyncworldedit:/pos2
+        - delay= 150 execute as @p run tp 0 151 0
+        - delay= 170 fastasyncworldedit:/setbiome mushroom_fields
+        
+        - delay= 170 execute as @p run mv purge event monsters
+        - execute as @p run gamemode creative
+        
+        - delay= 200 execute as @p run tpall
+        
+        
+        - delay= 300 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -46
+        - delay= 301 minecraft:tp @r[gamemode=survival,distance=..20] -35 147 -46
+        - delay= 302 minecraft:tp @r[gamemode=survival,distance=..20] -26 147 -46
+        - delay= 303 minecraft:tp @r[gamemode=survival,distance=..20] -15 147 -46
+        - delay= 304 minecraft:tp @r[gamemode=survival,distance=..20] -5 147 -46
+        - delay= 305 minecraft:tp @r[gamemode=survival,distance=..20] 7 147 -46
+        - delay= 306 minecraft:tp @r[gamemode=survival,distance=..20] 17 147 -46
+        - delay= 307 minecraft:tp @r[gamemode=survival,distance=..20] 27 147 -46
+        - delay= 308 minecraft:tp @r[gamemode=survival,distance=..20] 37 147 -46
+        - delay= 309 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -46
+        
+        - delay= 310 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -35
+        - delay= 311 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -25
+        - delay= 312 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -15
+        - delay= 313 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 -5
+        - delay= 314 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 7
+        - delay= 315 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 17
+        - delay= 316 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 27
+        - delay= 317 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 37
+        - delay= 318 minecraft:tp @r[gamemode=survival,distance=..20] 47 147 47
+        
+        
+        - delay= 319 minecraft:tp @r[gamemode=survival,distance=..20] 37 147 47
+        - delay= 320 minecraft:tp @r[gamemode=survival,distance=..20] 27 147 47
+        - delay= 321 minecraft:tp @r[gamemode=survival,distance=..20] 17 147 47
+        - delay= 322 minecraft:tp @r[gamemode=survival,distance=..20] 7 147 47
+        - delay= 323 minecraft:tp @r[gamemode=survival,distance=..20] -5 147 47
+        - delay= 324 minecraft:tp @r[gamemode=survival,distance=..20] -15 147 47
+        - delay= 325 minecraft:tp @r[gamemode=survival,distance=..20] -26 147 47
+        - delay= 326 minecraft:tp @r[gamemode=survival,distance=..20] -35 147 47
+        - delay= 327 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 47
+        
+        
+        - delay= 328 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 37
+        - delay= 329 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 27
+        - delay= 330 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 17
+        - delay= 331 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 7
+        - delay= 332 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -5
+        - delay= 333 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -15
+        - delay= 334 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -25
+        - delay= 335 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -35
+        
+        - delay= 340 lp group start_event parent remove event_takedamage
+        - delay= 380 lp group start_event parent remove event_modifyworld
+        - delay= 450 lp group start_event parent remove event_useitems
+        
+        - delay= 400 execute as @p[gamemode=creative] run execute as @a[gamemode=survival,distance=..500] run clear
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.chest with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.feet with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.head with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.legs with minecraft:air
+        - delay= 400 minecraft:item replace entity @a[gamemode=survival,distance=..500] weapon.offhand with minecraft:air
+        #- delay= 400 execute as @p[gamemode=creative] run effect clear @a
+        - delay= 450 execute as @p run heal *
+        - delay= 450 execute as @p run feed *
+        - delay= 450 execute as @p run give @a[gamemode=survival,distance=..500] apple 25
+        - delay= 450 execute as @p run give @a[gamemode=survival,distance=..500] tnt 200
+        - delay= 450 execute as @p run give @a[gamemode=survival,distance=..500] creeper_spawn_egg 10
+        
+        - delay= 540 tellraw @a[distance=..500] {"text":"5!","color":"green","bold":true}
+        - delay= 560 tellraw @a[distance=..500] {"text":"4!","color":"green","bold":true}
+        - delay= 580 tellraw @a[distance=..500] {"text":"3!","color":"green","bold":true}
+        - delay= 600 tellraw @a[distance=..500] {"text":"2!","color":"green","bold":true}
+        - delay= 620 tellraw @a[distance=..500] {"text":"1!","color":"green","bold":true}
+        - delay= 625 tellraw @a[distance=..500] {"text":"Start!","color":"green","bold":true}
+        - delay= 625 lp group events parent add event_quickstart
+      '47':
+        material: slime_ball
+        stack: 1
+        name: 'Play Bomberman'
+        lore:
+        - 'player-35 hit this during the countdown to start Bomberman to join'
+        commands:
+        - gamemode survival @p
+        - delay= 20 minecraft:tp @r[gamemode=survival,distance=..20] -46 147 -25
+        - delay= 30 minecraft:give @p apple 25
+        - delay= 30 minecraft:give @p tnt 200
+        - delay= 30 minecraft:give @p creeper_spawn_egg 10
+      '0':
+        material: RECOVERY_COMPASS
+        stack: 1
+        name: 'Randomizer -coming soon'
+        commands:
+        - randomizer start
+        - randomizer shuffle
+      '1':
+        material: LAVA_BUCKET
+        stack: 1
+        name: 'Lava Is Rising v2'
+        lore:
+        - 'world border will break it below 20'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder set 92 60
+        - execute as @p run worldborder damage buffer 0
+        - execute as @p run worldborder damage amount 1
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run setblock ~-10 25 ~-5 minecraft:command_block{Command:"/place template minecraft:lavairv2 ~ ~ ~"}
+        - execute as @p run setblock ~-10 26 ~-5 minecraft:observer[facing=up]
+        - execute as @p run mvsetspawn
+      '10':
+        material: PISTON
+        stack: 1
+        name: 'Trash Compactor v2'
+        lore:
+        - 'world boarder will break it below 20'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder set 92 60
+        - execute as @p run worldborder damage buffer 0
+        - execute as @p run worldborder damage amount 1
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run setblock ~-10 130 ~-5 minecraft:command_block{Command:"/place template minecraft:trashcompactorv2  ~ ~ ~"}
+        - execute as @p run setblock ~-10 131 ~-5 minecraft:observer[facing=up]
+        - execute as @p run mvsetspawn
+      '6':
+        material: brown_dye
+        stack: 1
+        name: 'ANTHILL X'
+        lore:
+        - "pregen the world in the x axis for best quality"
+        commands:
+        - execute as @p run worldborder set 1000000
+        - tellraw @p {"text":"Dont move starting setup for anthill v2!","color":"red","bold":true}
+        - execute as @p run gamerule commandBlockOutput false
+        - tp ~125 324 ~-4
+        - delay= 10 execute as @p run mv import xEventxVoidworld normal CleanRoomGenerator
+        - delay= 10 fastasyncworldedit:/pos1
+        - delay= 20 tp ~-250 -64 ~8 
+        - delay= 25 fastasyncworldedit:/pos2
+        - delay= 35 tp ~125 100 ~-5
+        - delay= 40 fastasyncworldedit:/walls barrier
+        - delay= 70 fastasyncworldedit:/copy
+        - delay= 100 mvtp hub
+        
+        
+        - delay= 110 execute as @p run mvunload event
+        - delay= 170 execute as @p run mvdelete event
+        - delay= 210 execute as @p run mv confirm
+        
+        - delay= 240 execute as @p run mvclone xEventxVoidworld event
+        - delay= 260 execute as @p run mvremove xEventxVoidworld
+        - delay= 370 execute as @p run mvtp event
+        - delay= 375 execute as @p run mv confirm
+        - delay= 380 gamemode creative
+        - delay= 410 tp 0 105 0
+        - delay= 420 fastasyncworldedit:/paste
+        - delay= 550 mvtp hub
+        - delay= 550 execute as @p run mv confirm
+        - delay= 560 mvtp event
+        - delay= 570 execute as @p run mv confirm
+        - delay= 590 tp 0 100 10
+        - delay= 600 execute as @p run worldborder set 300 
+        - delay= 590 cp ep item
+        - delay= 590 gamemode creative
+        - delay= 610 execute as @p run worldborder center ~ ~
+        - delay= 490 execute as @p run mvsetspawn
+        - delay= 600 execute as @p run setblock ~ ~-1 ~ minecraft:dirt
+        - delay= 610 tellraw @p {"text":"setup for anthill v2 finished!","color":"green","bold":true}
+      '15':
+        material: brown_dye
+        stack: 1
+        name: 'ANTHILL Z'
+        lore:
+        - "pregen the world in the z axis for best quality"
+        commands:
+        - execute as @p run worldborder set 1000000
+        - tellraw @p {"text":"Dont move starting setup for anthill v2!","color":"red","bold":true}
+        - execute as @p run gamerule commandBlockOutput false
+        - tp ~-4 324 ~125
+        - delay= 10 execute as @p run mv import xEventxVoidworld normal CleanRoomGenerator
+        - delay= 10 fastasyncworldedit:/pos1
+        - delay= 20 tp ~8 -64 ~-250 
+        - delay= 25 fastasyncworldedit:/pos2
+        - delay= 35 tp ~-5 100 ~125
+        - delay= 40 fastasyncworldedit:/walls structure_void
+        - delay= 70 fastasyncworldedit:/copy
+        - delay= 100 mvtp hub
+        
+        
+        - delay= 110 execute as @p run mvunload event
+        - delay= 170 execute as @p run mvdelete event
+        - delay= 210 execute as @p run mv confirm
+        
+        - delay= 240 execute as @p run mvclone xEventxVoidworld event
+        - delay= 260 execute as @p run mvremove xEventxVoidworld
+        - delay= 370 execute as @p run mvtp event
+        - delay= 375 execute as @p run mv confirm
+        - delay= 380 gamemode creative
+        - delay= 410 tp 0 105 0
+        - delay= 420 fastasyncworldedit:/paste
+        - delay= 550 mvtp hub
+        - delay= 550 execute as @p run mv confirm
+        - delay= 560 mvtp event
+        - delay= 570 execute as @p run mv confirm
+        - delay= 590 tp 10 100 0
+        - delay= 600 execute as @p run worldborder set 300 
+        - delay= 590 cp ep item
+        - delay= 590 gamemode creative
+        - delay= 610 execute as @p run worldborder center ~ ~
+        - delay= 490 execute as @p run mvsetspawn
+        - delay= 600 execute as @p run setblock ~ ~-1 ~ minecraft:dirt
+        - delay= 610 tellraw @p {"text":"setup for anthill v2 finished!","color":"green","bold":true}
+      '7':
+        material: black_dye
+        stack: 1
+        name: 'Petrified Arena'
+        commands:
+        - execute as @p run worldborder set 1000000
+        - delay= 5 tp ~100 200 ~100
+        - delay= 590 execute as @p run mvsetspawn
+        - execute as @p run worldborder center ~ ~
+        - delay= 10 fastasyncworldedit:/pos1
+        - delay= 20 tp ~-200 60 ~-200 
+        - delay= 25 fastasyncworldedit:/pos2
+        - delay= 40 fastasyncworldedit:/replace grass_block bedrock
+        - delay= 70 fastasyncworldedit:/replace bedrock
+        - delay= 90 fastasyncworldedit:/walls bedrock
+        - delay= 100 tp ~200 60 ~200 
+        - delay= 110 fastasyncworldedit:/pos1
+        - delay= 120 fastasyncworldedit:/replace air bedrock
+        - delay= 130 tp ~-100 250 ~-100
+        #- delay= 140 minecraft:kill @e[type=item]
+        - delay= 150 execute as @p run worldborder set 200
+        - delay= 150 execute as @p run mvsetspawn
+        - delay= 160 tellraw @p {"text":"finished!","color":"green","bold":true}
+      '16':
+        material: dirt
+        stack: 1
+        name: 'Petrified dirt Arena'
+        commands:
+        - execute as @p run worldborder set 1000000
+        - delay= 5 tp ~100 200 ~100
+        - delay= 590 execute as @p run mvsetspawn
+        - execute as @p run worldborder center ~ ~
+        - delay= 10 fastasyncworldedit:/pos1
+        - delay= 20 tp ~-200 50 ~-200 
+        - delay= 25 fastasyncworldedit:/pos2
+        - delay= 40 fastasyncworldedit:/replace grass_block stone
+        - delay= 70 fastasyncworldedit:/replace dirt
+        - delay= 100 tp ~200 50 ~200 
+        - delay= 110 fastasyncworldedit:/pos1
+        - delay= 120 fastasyncworldedit:/replace bedrock
+        - delay= 130 fastasyncworldedit:/replace air bedrock
+        - delay= 140 tp ~-100 250 ~-100
+        #- delay= 150 minecraft:kill @e[type=item]
+        - delay= 160 execute as @p run worldborder set 200
+        - delay= 160 execute as @p run mvsetspawn
+        - delay= 170 tellraw @p {"text":"finished!","color":"green","bold":true}
+      '3':
+        material: tnt
+        stack: 1
+        name: 'TNT TAG'
+        lore:
+        - "start a single round of tnt tag"
+        commands:
+        - execute as @p run mvm set diff normal
+        - tellraw @a[distance=..500] {"text":"Tag your it a round of tnt tag has started!","color":"red","bold":true}
+        - minecraft:item replace entity @a[gamemode=survival,distance=..500,limit=1,sort=random] armor.head with minecraft:tnt{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+        - delay= 50 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:tnt"}]}] minecraft:speed 7 2 true
+        - delay= 40 tellraw @a[distance=..500] {"text":"30!","color":"red","bold":true}
+        - delay= 440 tellraw @a[distance=..500] {"text":"10!","color":"red","bold":true}
+        - delay= 540 tellraw @a[distance=..500] {"text":"5!","color":"red","bold":true}
+        - delay= 550 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:tnt"}]}] minecraft:speed 7 2 true
+        - delay= 560 tellraw @a[distance=..500] {"text":"4!","color":"red","bold":true}
+        - delay= 580 tellraw @a[distance=..500] {"text":"3!","color":"red","bold":true}
+        - delay= 600 execute at @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:tnt"}]}] run playsound minecraft:entity.creeper.primed master @p ~ ~ ~ 50 .02
+        - delay= 600 tellraw @a[distance=..500] {"text":"2!","color":"red","bold":true}
+        - delay= 620 tellraw @a[distance=..500] {"text":"1!","color":"red","bold":true}
+        - delay= 639 minecraft:item replace entity @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:tnt"}]}] armor.head with minecraft:carrot{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+        - delay= 640 execute at @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:carrot"}]}] run summon tnt ~ ~ ~ {Fuse:1}
+        - delay= 645 minecraft:kill @e[type=item]
+      '12':
+        material: poisonous_potato
+        stack: 1
+        name: 'potato TAG'
+        lore:
+        - "start a single round of potato tag"
+        commands:
+        - execute as @p run mvm set diff normal
+        - execute as @p run gamerule commandBlockOutput false
+        - tellraw @a[distance=..500] {"text":"Tag your it a round of potato tag has started!","color":"green","bold":true}
+        - minecraft:item replace entity @a[gamemode=survival,distance=..500,limit=1,sort=random] armor.head with minecraft:poisonous_potato{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+        - delay= 400 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:poisonous_potato"}]}] minecraft:speed 15 2 true
+        - delay= 20 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:poisonous_potato"}]}] minecraft:nausea 60 3 true
+        - delay= 600 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:poisonous_potato"}]}] minecraft:slowness 15 3 true
+        - delay= 640 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:poisonous_potato"}]}] minecraft:poison 60 1 true
+        - delay= 1000 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:poisonous_potato"}]}] minecraft:wither 30 20 true
+        - delay= 1040 minecraft:kill @e[type=item]
+      '53':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc
+      '54':
+        material: beehive
+        stack: 1
+        name: 'Exsploding bee TAG'
+        lore:
+        - "start a single round of tnt tag"
+        commands:
+        - tellraw @a[distance=..500] {"text":"Tag your it a round of tnt tag has started!","color":"red","bold":true}
+        - minecraft:item replace entity @a[gamemode=survival,distance=..500,limit=1,sort=random] armor.head with minecraft:beehive{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+        - delay= 50 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:beehive"}]}] minecraft:speed 7 2 true
+        - delay= 40 tellraw @a[distance=..500] {"text":"30!","color":"red","bold":true}
+        - delay= 440 tellraw @a[distance=..500] {"text":"10!","color":"red","bold":true}
+        - delay= 540 tellraw @a[distance=..500] {"text":"5!","color":"red","bold":true}
+        - delay= 550 effect give @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:beehive"}]}] minecraft:speed 7 2 true
+        - delay= 560 tellraw @a[distance=..500] {"text":"4!","color":"red","bold":true}
+        - delay= 580 tellraw @a[distance=..500] {"text":"3!","color":"red","bold":true}
+        - delay= 600 execute at @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:beehive"}]}] run playsound minecraft:entity.creeper.primed master @p ~ ~ ~ 50 .02
+        - delay= 600 tellraw @a[distance=..500] {"text":"2!","color":"red","bold":true}
+        - delay= 620 tellraw @a[distance=..500] {"text":"1!","color":"red","bold":true}
+        - delay= 639 minecraft:item replace entity @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:beehive"}]}] armor.head with minecraft:carrot{HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+        - delay= 640 execute at @a[distance=..500,nbt={Inventory:[{Slot:103b,id:"minecraft:carrot"}]}] run summon tnt ~ ~ ~ {Fuse:1}
+        - delay= 645 minecraft:kill @e[type=item]
+      '54':
+        material: stone_button
+        stack: 1
+        name: 'Push the button'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run mvsetspawn
+        - delay= 20 execute as @p run worldborder set 50 
+        - execute as @p run setblock ~-24 ~-2 ~-24 minecraft:command_block{Command:"/place template minecraft:thebutton ~ ~ ~"}
+        - execute as @p run setblock ~-24 ~-1 ~-24 minecraft:observer[facing=up]
+      '54':
+        material: LAVA_BUCKET
+        stack: 1
+        name: 'Raining fire'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder set 126 60
+        - execute as @p run worldborder damage buffer 0
+        - execute as @p run worldborder damage amount 1
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run setblock ~-64 225 ~-64 minecraft:command_block{Command:"/place template minecraft:lavaif ~ ~ ~"}
+        - execute as @p run setblock ~-64 226 ~-64 minecraft:observer[facing=up]
+        - execute as @p run summon minecraft:falling_block ~-64 319 ~-64 {BlockState:{Name:"minecraft:stone"},Time:-1200}
+      '54':
+        material: BUCKET
+        stack: 1
+        name: 'void Is Rising'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder set 126 60
+        - execute as @p run worldborder damage buffer 0
+        - execute as @p run worldborder damage amount 1
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run setblock ~-64 -60 ~-64 minecraft:command_block{Command:"/place template minecraft:voidir ~ ~ ~"}
+        - execute as @p run setblock ~-64 -59 ~-64 minecraft:observer[facing=up]
+        - execute as @p run summon minecraft:falling_block ~-64 319 ~-64 {BlockState:{Name:"minecraft:stone"},Time:-1200}
+      '54':
+        material: cauldron
+        stack: 1
+        name: 'Quick Box'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run mvsetspawn
+        - delay= 20 execute as @p run worldborder set 50 
+        - execute as @p run setblock ~-24 ~-2 ~-24 minecraft:command_block{Command:"/place template minecraft:quickbox ~ ~ ~"}
+        - execute as @p run setblock ~-24 ~-1 ~-24 minecraft:observer[facing=up]
+      '54':
+        material: music_disc_pigstep
+        stack: 1
+        name: 'colorwheelof4tune'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run mvsetspawn
+        - delay= 20 execute as @p run worldborder set 50 
+        - execute as @p run setblock ~-24 ~-2 ~-24 minecraft:command_block{Command:"/place template minecraft:wheelof4tune ~ ~ ~"}
+        - execute as @p run setblock ~-24 ~-1 ~-24 minecraft:observer[facing=up]
+      '54':
+        material: nether_star
+        stack: 1
+        name: 'Hide and seek'
+        commands:
+        - effect clear @a
+        - delay= 20 execute as @p run execute as @a[gamemode=survival,distance=..500] run clear
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.chest with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.feet with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.head with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.legs with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..500] weapon.offhand with minecraft:air
+        - delay= 20 execute as @p run effect give @a[gamemode=creative,distance=..500] minecraft:glowing infinite 2
+        - delay= 20 lp group default parent remove eventstart
+        - delay= 60 lp group default parent add hideandseek
+        - delay= 20 execute as @p run effect give @a[gamemode=creative,distance=..500] minecraft:blindness 60
+        - delay= 20 execute as @p run effect give @a[gamemode=survival,distance=..500] minecraft:saturation infinite
+        - delay= 20 minecraft:gamerule naturalRegeneration false
+        - delay= 20 execute as @p run randomizer stop
+        - delay= 20 execute as @p run effect give @a[gamemode=survival,distance=..500] minecraft:mining_fatigue infinite 10
+        - delay= 20 execute as @p run effect give @a[gamemode=survival,distance=..500] minecraft:speed infinite
+        - delay= 20 execute as @p run effect give @a[gamemode=survival,distance=..500] minecraft:jump_boost infinite
+        - delay= 20 execute as @p run effect give @a[gamemode=survival,distance=..500] minecraft:slow_falling infinite
+        - delay= 20 execute as @p run effect give @a[gamemode=creative,distance=..500] minecraft:regeneration infinite 20
+        - delay= 20 execute as @p run effect give @a[gamemode=creative,distance=..500] minecraft:resistance infinite 100
+        - delay= 20 execute as @p run effect give @a[gamemode=creative,distance=..500] minecraft:speed infinite 2
+        - delay= 20 execute as @p run effect give @a[gamemode=creative,distance=..500] minecraft:jump_boost infinite 2
+        - delay= 20 execute as @p run worldborder set 580
+      '64':
+        material: WATER_BUCKET
+        stack: 1
+        name: 'Water Is Rising'
+        commands:
+        - execute as @p run gamerule commandBlockOutput false
+        - execute as @p run worldborder set 126 60
+        - execute as @p run worldborder damage buffer 0
+        - execute as @p run worldborder damage amount 1
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run setblock ~-64 -60 ~-64 minecraft:command_block{Command:"/place template minecraft:waterir ~ ~ ~"}
+        - execute as @p run setblock ~-64 -59 ~-64 minecraft:observer[facing=up]
+        - execute as @p run summon minecraft:falling_block ~-64 319 ~-64 {BlockState:{Name:"minecraft:stone"},Time:-1200}
+
+      '54':
+        material: lectern
+        stack: 1
+        name: 'TownOfSalem'
+        lore:
+        - ''
+        commands:
+        - minecraft:give @p written_book{pages:['["",{"text":"   You are the Killer\\n   "},{"selector":"@p","color":"dark_red"},{"text":"\\n\\nWhere would you like to\\nvisit tonight?\\n","color":"reset"},{"text":"[1]","color":"gold","clickEvent":{"action":"change_page","value":2}},{"text":" ","color":"gold"},{"text":"[2]","color":"gold","clickEvent":{"action":"change_page","value":3}},{"text":"  ","color":"gold"},{"text":"[3] ","color":"gold","clickEvent":{"action":"change_page","value":4}},{"text":"  ","color":"gold"},{"text":"[4]","color":"gold","clickEvent":{"action":"change_page","value":5}},{"text":"\\n","color":"reset"},{"text":"[5]","color":"gold","clickEvent":{"action":"change_page","value":6}},{"text":"  ","color":"gold"},{"text":"[6]","color":"gold","clickEvent":{"action":"change_page","value":7}},{"text":" ","color":"gold"},{"text":"[7]","color":"gold","clickEvent":{"action":"change_page","value":8}},{"text":"   ","color":"gold"},{"text":"[8]","color":"gold","clickEvent":{"action":"change_page","value":9}},{"text":"\\n","color":"reset"},{"text":"[9]","color":"gold","clickEvent":{"action":"change_page","value":10}},{"text":" ","color":"gold"},{"text":"[10]","color":"gold","clickEvent":{"action":"change_page","value":11}},{"text":" ","color":"gold"},{"text":"[11]","color":"gold","clickEvent":{"action":"change_page","value":12}},{"text":" ","color":"gold"},{"text":"[12]","color":"gold","clickEvent":{"action":"change_page","value":13}},{"text":"\\n","color":"reset"},{"text":"[13]","color":"gold","clickEvent":{"action":"change_page","value":14}},{"text":"[14]","color":"gold","clickEvent":{"action":"change_page","value":15}},{"text":" ","color":"gold"},{"text":"[15]","color":"gold","clickEvent":{"action":"change_page","value":16}},{"text":" ","color":"gold"},{"text":"[16]","color":"gold","clickEvent":{"action":"change_page","value":17}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [1]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [2]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [3]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [4]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [5]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [6]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [7]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [8]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [9]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [10]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [11]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [12]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [13]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [14]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [15]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]','["",{"text":"<","color":"red"},{"text":"Return","color":"dark_red","clickEvent":{"action":"change_page","value":1}},{"text":" \\n\\n \\u0020 \\u0020 \\u0020 \\u0020House [16]\\n","color":"reset"},{"selector":"@p[x=20,y=70,z=20,distance=10]"},{"text":"\\n\\n"},{"text":"Click to visit","color":"dark_red","clickEvent":{"action":"run_command","value":"tp @p[tag=killer] 20 70 20"}}]'],title:Killersbook,author:"Town of Amungus",display:{Lore:["Use to pick a target for tonight"]}}
+      '54':
+        material: gold_block
+        stack: 1
+        name: 'Epicluckyblock'
+        lore:
+        - 'turns on sub event 3 GIVES ALL varieties OF LUCKY BLOCKS'
+        commands:
+        - lp group eventstart2 parent add subevent3
+        - elb get 1
+        - luckyblock get BLACK 1
+        - luckyblock get YELLOW 1
+        - luckyblock get WHITE 1
+        - luckyblock get RED 1
+        - luckyblock get PURPLE 1
+        - luckyblock get PINK 1
+        - luckyblock get ORANGE 1
+        - luckyblock get MAGENTA 1
+        - luckyblock get LIME 1
+        - luckyblock get LIGHT_GRAY 1
+        - luckyblock get LIGHT_BLUE 1
+        - luckyblock get GREEN 1
+        - luckyblock get GRAY 1
+        - luckyblock get CYAN 1
+        - luckyblock get BROWN 1
+        - luckyblock get BLUE 1
+      '54':
+        material: soul_lantern
+        stack: 1
+        name: 'KillerGhost'
+        lore:
+        - 'makes a random player a ghost that is to hunt the liveing'
+        - 'use the coustome map spookymaze'
+        commands:
+        - delay= 40 attribute @a[distance=..200] minecraft:generic.max_health base set 20
+        - execute as @s run gamemode survival @r[gamemode=adventure,distance=..500]
+        - delay= 40 execute as @p[gamemode=creative] run execute as @a[gamemode=survival,distance=..500] run clear
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.chest with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.feet with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.head with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.legs with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] weapon.offhand with minecraft:air
+        - delay= 10 execute as @p[gamemode=creative] run effect clear @a
+        - delay= 40 minecraft:kill @e[type=item]
+        - execute at @a[distance=..500] run title @p title {"text":"Ghost will be chosen in 25s","bold":true,"italic":true,"underlined":true,"color":"green"}
+        - delay= 100 gamemode survival @p
+        - team add ghost
+        - execute as @p run mvm set diff peaceful
+        
+        - delay= 40 execute as @s run mv purge event monsters
+        - delay= 40 execute as @s run gamerule commandBlockOutput false
+        - delay= 40 execute as @s run gamerule doimmediaterespawn true
+        - delay= 40 execute as @s run mvmodify set pvp true
+        - delay= 40 execute as @s run gamerule doAdvancementAnnounce false
+        - delay= 40 execute as @s run gamerule spectatorsGenerateChunks false
+        - delay= 40 execute as @s run minecraft:gamerule doMobSpawning false
+        - delay= 20 lp group default parent add eventstart2
+        - delay= 60 lp group eventstart parent remove eventtakedammage
+        - delay= 20 team join ghost @a[distance=..200]
+        - delay= 40 team modify ghost seeFriendlyInvisibles true
+        - delay= 40 team modify ghost nametagVisibility hideForOwnTeam
+        - delay= 40 team modify ghost deathMessageVisibility always
+        - delay= 40 team modify ghost friendlyFire false 
+        - execute as @p time set 14000
+        - execute as @p run gamerule doWeatherCycle false
+        - execute as @p run gamerule doDaylightCycle false
+        - execute as @p run weather clear      
+        - delay= 250 lp group eventstart parent remove hunger
+        - delay= 300 lp group eventstart parent add dealdamage
+        - delay= 300 execute as @s run gamemode adventure @r[distance=..500]
+        - delay= 310 execute at @a[gamemode=adventure,distance=..500] run title @p[gamemode=adventure] title {"text":"YOU ARE A Ghost","bold":true,"italic":true,"underlined":true,"color":"aqua"}
+        - delay= 310 execute at @a[gamemode=survival,distance=..500] run title @p[gamemode=survival] title {"text":"YOU ARE Among The Living","bold":true,"italic":true,"underlined":true,"color":"red"}
+        - delay= 320 execute at @a[gamemode=adventure,distance=..500] run effect give @p[gamemode=adventure] minecraft:invisibility infinite
+        - delay= 320 execute at @a[gamemode=adventure,distance=..500] run effect give @p[gamemode=adventure] minecraft:fire_resistance infinite
+        - delay= 320 execute at @a[gamemode=adventure,distance=..500] run effect give @p[gamemode=adventure] minecraft:instant_health infinite
+        - delay= 320 execute at @a[gamemode=adventure,distance=..500] run effect give @p[gamemode=adventure] minecraft:slow_falling infinite
+        - delay= 450 execute as @p run execute at @a[gamemode=adventure] run item flint_and_steel 1 {Unbreakable: 1}
+        - delay= 320 effect give @a[distance=..500] minecraft:darkness infinite
+        - delay= 310 execute at @a[gamemode=survival,distance=..500] run attribute @p[gamemode=survival] minecraft:generic.max_health base set 2
+       

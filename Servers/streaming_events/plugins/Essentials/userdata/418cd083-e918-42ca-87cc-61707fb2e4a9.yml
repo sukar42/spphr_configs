@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 157.157.156.219
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1710170355915
+  login: 1710170351264
+money: '0'
+last-account-name: davidiscoolfrfr
+logoutlocation:
+  world: fde0745c-5ce4-4299-8400-d39e4c1d9107
+  world-name: hub
+  x: 0.5
+  y: 99.0
+  z: 0.5
+  yaw: -1.7778403759002686
+  pitch: 6.366488933563232

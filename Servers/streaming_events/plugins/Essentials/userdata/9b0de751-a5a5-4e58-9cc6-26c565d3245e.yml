@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 92.221.77.13
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1708379196225
+  login: 1708378944244
+money: '0'
+last-account-name: JonnyMackaronny
+lastlocation:
+  world: fde0745c-5ce4-4299-8400-d39e4c1d9107
+  world-name: hub
+  x: 8.876980584988837
+  y: 160.0
+  z: 3.7781484235935174
+  yaw: 63.46133804321289
+  pitch: -7.4954447746276855
+logoutlocation:
+  world: 663cf55e-f4ff-48f5-b184-59354f6d1915
+  world-name: event
+  x: -5.353480177931194
+  y: 151.0
+  z: -7.201057460000115
+  yaw: -45.600154876708984
+  pitch: 13.349796295166016

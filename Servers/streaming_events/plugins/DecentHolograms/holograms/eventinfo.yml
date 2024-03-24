@@ -1,0 +1,12 @@
+location: hub:-3.708:31.750:152.509
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: JOIN HERE FOR EVENTS SUNDAYS? AT <§x§5§A§F§F§2§6> 20:00 GMT+1 2pm EST
+    height: 0.3
+  actions: {}

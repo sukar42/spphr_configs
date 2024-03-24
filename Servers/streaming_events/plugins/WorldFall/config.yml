@@ -1,0 +1,10 @@
+scoreboard:
+  enabled: false
+  ticks: 20
+  title: 
+  text:
+  - 'Player: %player_name%'
+  - ''
+  - 'X: %coord_x%'
+  - 'Y: %coord_y%'
+  - 'Z: %coord_z%'

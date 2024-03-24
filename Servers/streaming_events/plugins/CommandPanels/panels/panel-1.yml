@@ -1,0 +1,231 @@
+panels:
+  ep:
+    perm: event
+    rows: 6
+    title: '&2Event Worlds Panel'
+    empty: BLACK_STAINED_GLASS_PANE
+    open-with-item:
+      material: emerald
+      name: '&aEvent Command Panel'
+      lore:
+      - "&2Open the event panel"
+      commands:
+      - open= ep
+    disabled-worlds:
+    - earth_the_end
+    - resources
+    - earth_nether
+    item:
+      '60':
+        material: red_glazed_terracotta
+        stack: 1
+        name: 'unload Worlds for event proformance'
+        lore:
+        - '&5Dont forget to reload worlds after event'
+        commands:
+        - tellraw @a {"text":"&cEVENT &0>> &f&n The worlds  Resources, End and Nether Are Closing for the Event in 30 seconds. /hub to exit."}
+        - delay= 400 tellraw @a {"text":"&cEVENT &0>> &f&n The worlds  Resources, End and Nether Are Closing for the Event in 15 seconds. /hub to exit."}
+        - delay= 800 tellraw @a {"text":"&cEVENT &0>> &f&n The worlds  Resources, End and Nether Are Closed for the Event!"}
+        - delay= 800 execute as @p run mvunload TestWorld
+        - delay= 800 execute as @p run mvunload earth_the_end
+        - delay= 800 execute as @p run mvunload earth_nether
+        - delay= 800 execute as @p run mvunload resources
+      '60':
+        material: blue_glazed_terracotta
+        stack: 1
+        name: 'Load Worlds'
+        commands:
+        - delay= 60 tellraw @a {"text":"&cEVENT &0>> &f&n The worlds Resources, End and Nether Have Opened!"}
+        - execute as @p run mvimport TestWorld normal normal
+        - execute as @p run mvimport earth_the_end end
+        - execute as @p run mvimport earth_nether nether
+        - execute as @p run mvimport resources normal normal
+      '0':
+        material: VERDANT_FROGLIGHT
+        stack: 1
+        name: '&b&lTP to Event'
+        commands:
+        - execute as @p run mvtp event
+        - delay= 20 execute as @p run mv confirm
+        - delay= 40 cp ep item
+        - delay= 40 gamemode creative
+      '2':
+        material: ORANGE_CONCRETE
+        stack: 1
+        name: '&e&lGamerules N/A'
+        commands:
+        - execute as @p run gamerulemanager
+      '3':
+        material: player_head
+        stack: 1
+        name: 'List players in world event'
+        commands:
+        - execute as @p run mvw event
+      '45':
+        material: red_glazed_terracotta
+        stack: 1
+        name: '&a&lReset After Events'
+        lore:
+        - ''
+        commands:
+        - mv modify set respawnWorld hub event
+        - randomizer stop
+        - delay= 10 hub
+        - delay= 20 dh h enable eventinfo
+        - delay= 20 lp group events parent remove event_quickstart
+        - delay= 180 lp group event_quickstart parent add event_gsit
+        - delay= 260 lp group start_event  parent add event_dealdamage
+        - delay= 300 lp group start_event  parent add event_modifyworld
+        - delay= 340 lp group start_event  parent add event_personalspace
+        - delay= 420 lp group start_event  parent remove event_chat
+        - delay= 460 lp group start_event  parent add event_useitems
+        - delay= 520 lp group start_event  parent add event_hunger 
+        - delay= 560 lp group start_event  parent add event_takedamage
+        - delay= 600 lp group event_quickstart parent add start_event
+        - mvreload
+        - delay= 40 dh reload
+        - worldfall stop
+        - worldfall scoreboard disable
+      '46':
+        material: yellow_glazed_terracotta
+        stack: 1
+        name: '&a&lReset Eventinfo DH'
+        commands:
+        - delay= 20 dh h enable eventinfo
+        - execute as @p run dh l set eventinfo 1 1   JOIN HERE FOR EVENTS SUNDAYS? AT <#5AFF26> 20:00 GMT+1   2pm EST 
+        - delay= 40 dh reload
+        
+      '27':
+        material: purple_glazed_terracotta
+        stack: 1
+        name: '&a&lSend all players to the hub'
+        commands:
+        - execute as @a run hub
+      '8':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&b&lOpen Event'
+        lore:
+        - '&5Allows all players to Join the Event World'
+        commands:
+        - lp group events parent add join_event 
+        - tellraw @a {"text":"&cEVENT &8>> &n&fThe Event has opened use (/warp Event) to Join now!"}
+        - delay= 20 execute as @p run dh l set eventinfo 1 1  EVENT IS OPEN TO JOIN! /Warp Event 
+        - delay= 40 dh reload
+      '17':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&7&lCloses the Event entry period'
+        lore:
+        - '&4Closes the Event Entry period'
+        commands:
+        - lp group events parent remove join_event
+        - tellraw @a {"text":"&cEVENT &8>> &n&f The Event entry has Closed! Go watch the event with /live. "}
+        - dh h enable eventinfo
+        - delay= 20 execute as @p run dh l set eventinfo 1 1  WAIT HERE FOR THE NEXT EVENT!<3 
+        - delay= 40 dh reload
+      '7':
+        material: PEARLESCENT_FROGLIGHT
+        stack: 1
+        name: '&5&lSet Event warp'
+        commands:
+        - execute as @p run mvpmodify destination event
+        - delay= 40 execute as @p run mvps eventwarpgate
+      '6':
+        material: PEARLESCENT_FROGLIGHT
+        stack: 1
+        name: '&5&lReload MVP'
+        lore:
+        - '&5Use to fix the warp portal when its not working'
+        commands:
+        - execute as @p run mvreload
+      '54':
+        material: OCHRE_FROGLIGHT
+        stack: 1
+        name: '&5&lClear Event warp'
+        commands:
+        - execute as @p run mvpmodify destination blank
+        - delay= 40 execute as @p run mvps eventwarpgate
+      '20':
+        material: GRASS_BLOCK
+        stack: 1
+        name: 'World Gen Selection'
+        commands:
+        - cp panel-6
+      '23':
+        material: OAK_PLANKS
+        stack: 1
+        name: 'PRE GEN World Selection'
+        commands:
+        - cp panel-11
+      '18':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&4&lDelete world Event'
+        lore:
+        - '&cWarning eject players from world first'
+        commands:
+        - hub
+        - execute as @p run mvunload event
+        - delay= 60 execute as @p run mvdelete event
+        - delay= 100 execute as @p run mv confirm
+      '21':
+        material: NETHERRACK
+        stack: 1
+        name: ' Nether World gen Selection'
+        commands:
+        - cp panel-9
+      '22':
+        material: END_STONE
+        stack: 1
+        name: 'END World gen Selection'
+        commands:
+        - cp panel-10
+      '44':
+        material: REDSTONE_BLOCK
+        stack: 1
+        name: 'unload all pregen'
+        commands:
+        - execute as @p run mvremove xEventxVoidworld
+        - execute as @p run mvremove xEventxMushroomArena
+        - execute as @p run mvremove xEventxPlanetoids
+        - execute as @p run mvremove xEventxDeepdarkgen
+        - execute as @p run mvremove xEventxVintagelobby
+        - execute as @p run mvremove xEventxSapphireArenas
+      '54':
+        material: PLAYER_HEAD
+        stack: 1
+        name: Player menu
+        lore:
+        - opens player menu
+        commands:
+        - players
+      '54':
+        material: WHITE_WOOL
+        stack: 1
+        name: '&8Event Worlds Panel'
+      '51':
+        material: BLUE_WOOL
+        stack: 1
+        name: 'Gamemodes'
+        commands:
+        - cp panel-4
+      '50':
+        material: LIME_WOOL
+        stack: 1
+        name: 'Event Start'
+        commands:
+        - cp panel-5
+      '52':
+        material: RED_WOOL
+        stack: 1
+        name: '&c&lEnd Event Panel'
+        commands:
+        - cp panel-2
+      '53':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc
+

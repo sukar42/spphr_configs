@@ -1,0 +1,31 @@
+panels:
+  panel-10:
+    perm: event
+    rows: 6
+    title: '&8End world Gen'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '3':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate skygrid End world Event'
+        commands:
+        - execute as @p run mv create event End -g skygrid
+      '53':
+        material: WHITE_WOOL
+        stack: 1
+        name: 'Event Worlds Panel'
+        commands:
+        - cp ep
+      '54':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate ReimagEND world Event'
+        commands:
+        - execute as @p run mv create event END -g Terra:END
+      '49':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc

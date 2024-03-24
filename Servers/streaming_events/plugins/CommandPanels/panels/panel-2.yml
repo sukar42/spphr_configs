@@ -1,0 +1,51 @@
+panels:
+  panel-2:
+    perm: event
+    rows: 3
+    title: '&4End Event Panel'
+    empty: BLACK_STAINED_GLASS_PANE
+    disabled-worlds:
+    - earth_the_end
+    - resources
+    - earth
+    - earth_nether
+    - hub
+    item:
+      '4':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&c&lEnd Event'
+        commands:
+        - delay= 100 lp group events parent remove join_event
+        - tellraw @a {"text":"EVENTS- The Event has Ended! "}
+        #- execute as @p run mvpmodify destination blank
+        #- execute as @p run mvps eventwarpgate
+        - randomizer stop
+        - delay= 20 lp group events parent remove event_quickstart
+        #- delay= 60 lp group events parent remove hideandseek
+        #- delay= 100 lp group events parent remove event
+        - execute as @a[gamemode=survival,distance=..1500] run hub
+        - execute as @a[gamemode=spectator] run hub
+        - delay= 180 lp group event_quickstart parent add event_gsit
+        - delay= 260 lp group start_event  parent add event_dealdamage
+        - delay= 300 lp group start_event  parent add event_modifyworld
+        - delay= 340 lp group start_event  parent add event_personalspace
+        - delay= 420 lp group start_event  parent remove event_chat
+        - delay= 460 lp group start_event  parent add event_useitems
+        - delay= 520 lp group start_event  parent add event_hunger 
+        - delay= 560 lp group start_event  parent add event_takedamage
+        - delay= 600 lp group event_quickstart parent add start_event
+        - mv modify set respawnWorld hub event
+        - hub
+        - delay= 20 hub
+        - delay= 25 gamemode creative
+        - delay= 30 execute as @p[gamemode=creative,x=-21.5,y=62.0,z=90.5] run execute at @p[gamemode=creative] run setspawn event
+        - worldfall stop
+        - worldfall scoreboard disable
+        #- team remove ghost
+      '26':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 146.70.187.143
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1708379615002
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1708379715473
+  login: 1708378012578
+money: '0'
+last-account-name: Steam
+lastlocation:
+  world: fde0745c-5ce4-4299-8400-d39e4c1d9107
+  world-name: hub
+  x: -2.379525434423545
+  y: 165.39852080507853
+  z: 2.847699952266515
+  yaw: -173.906982421875
+  pitch: 38.28434753417969
+logoutlocation:
+  world: fcdbd53a-84af-4bfe-8ac2-735f83238a4f
+  world-name: event
+  x: 129.9616155700768
+  y: 42.0
+  z: 113.02360734521261
+  yaw: 119.25390625
+  pitch: 16.368974685668945

@@ -1,0 +1,372 @@
+panels:
+  panel-5:
+    perm: event
+    rows: 6
+    title: '&8Event Start'
+    empty: BLACK_STAINED_GLASS_PANE
+    disabled-worlds:
+    - earth_the_end
+    - resources
+    - earth
+    - earth_nether
+    - hub
+    item:
+      '1':
+        material: AMETHYST_CLUSTER
+        stack: 1
+        name: 'Set start with box'
+        commands:
+        - execute as @p run place template minecraft:eventstart ~-11 ~-1 ~-20
+        - execute as @p run mvsetspawn
+        - execute as @p run gamerule announceAdvancements false
+        - execute as @p run setworldspawn
+        - execute as @p run gamerule spawnRadius 0
+        - execute as @p run gamerule doImmediateRespawn true
+        - execute as @p run mvmodify set pvp false
+        - lp group events parent remove start_event
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run gamerule spectatorsGenerateChunks false
+        - execute as @p run worldborder set 300
+        - execute as @p run gamerule doWeatherCycle false
+        - execute as @p run gamerule doDaylightCycle false
+        - execute as @p run time set 1700
+        - execute as @p run weather clear    
+        - execute as @p run setwarp event
+        - randomizer stop
+      '54':
+        material: respawn_anchor
+        stack: 1
+        name: 'Allow respawning in event??'
+        lore:
+        - 'This moves the event world spawn to your location'
+        - 'The spawn needs to be inside the world border at all times or a infinet death loop... rejoin the server to get to lobby in this case '
+        - 'use (/worldborder center ~ ~) at spawn recomended'
+        commands:  
+        - execute as @p run mvsetspawn
+        - execute as @p run setworldspawn
+        - mv modify set respawnWorld event event
+        #- setspawn event
+      '54':
+        material: respawn_anchor
+        stack: 1
+        name: 'Set hub as respawn'
+        commands:  
+        - mv modify set respawnWorld hub event
+        #- delay= 20 hub
+        #- delay= 25 gamemode creative
+        #- delay= 30 execute as @p[gamemode=creative,x=-21.5,y=62.0,z=90.5] run execute at @p[gamemode=creative] run setspawn event
+        
+        #- delay= 40 execute as @p run mvtp event
+        #- delay= 45 execute as @p run mv confirm
+        #- delay= 50 cp ep item
+        #- delay= 60 gamemode creative
+      '45':
+        material: COMPASS
+        stack: 1
+        name: 'Skygrid start setup'
+        lore:
+        - 'Skygrid only'
+        commands:
+        - execute as @p run tp .5 253 .5
+        - execute as @p run dc enable rtp
+        - execute as @p run mvmodify set pvp true
+        - execute as @p run gamerule doImmediateRespawn true
+        - execute as @p run worldborder damage buffer 0
+        - execute as @p run worldborder damage amount .3
+        - delay= 40 execute as @p run place template minecraft:eventstart ~-11 ~-1 ~-20
+        - execute as @p run mvsetspawn
+        - execute as @p run gamerule announceAdvancements false
+        - execute as @p run setworldspawn
+        - execute as @p run gamerule spawnRadius 0
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run worldborder set 350
+        - execute as @p run gamerule doWeatherCycle false
+        - execute as @p run gamerule doDaylightCycle false
+        - execute as @p run time set 1700
+        - execute as @p run weather clear       
+        
+      '0':
+        material: AMETHYST_SHARD
+        stack: 1
+        name: 'start setup no box'
+        lore:
+        - ''
+        commands:
+        - execute as @p run mvsetspawn
+        - execute as @p run gamerule announceAdvancements false
+        - execute as @p run setworldspawn
+        - execute as @p run gamerule spawnRadius 0
+        - execute as @p run gamerule doImmediateRespawn true
+        - execute as @p run mvmodify set pvp false
+        - lp group events parent remove start_event
+        - execute as @p run worldborder center ~ ~
+        - execute as @p run gamerule spectatorsGenerateChunks false
+        - execute as @p run worldborder set 300
+        - execute as @p run gamerule doWeatherCycle false
+        - execute as @p run gamerule doDaylightCycle false
+        - execute as @p run time set 1700
+        - execute as @p run weather clear    
+        - execute as @p run setblock ~ ~-1 ~ minecraft:amethyst_block
+        - execute as @p run setwarp event
+        - randomizer stop
+      '3':
+        material: bell
+        stack: 1
+        name: 'Summon all players to event and reset'
+        lore:
+        - 'will remove all armor slots and potions and clear inventory.'
+        commands:
+        - execute as @p run gamemode creative
+        - delay= 20 execute as @p run tpall
+        - delay= 40 execute as @p[gamemode=creative] run execute as @a[gamemode=survival,distance=..500] run clear
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.chest with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.feet with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.head with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] armor.legs with minecraft:air
+        - delay= 40 minecraft:item replace entity @a[gamemode=survival,distance=..500] weapon.offhand with minecraft:air
+        - delay= 40 execute as @p[gamemode=creative] run effect clear @a
+        - delay= 40 minecraft:kill @e[type=item]
+      '4':
+        material: SPAWNER
+        stack: 1
+        name: 'REMOVE Monsters'
+        commands:
+        - execute as @p run mv purge event monsters
+      '5':
+        material: FLOWERING_AZALEA
+        stack: 1
+        name: 'SET PEACFUL MODE'
+        commands:
+        - execute as @p run mvm set diff peaceful
+      '12':
+        material: chest_minecart
+        stack: 1
+        name: 'Send your inventory as kit to everyone'
+        lore:
+        - 'Place the command panel item in the first slot of your hotbar so players dont get it!'
+        - 'clear players inventory first unless you are giving them additional items'
+        commands:
+        - execute as @p run deletekit giveeventkit
+        - lp group events parent add event_kit
+        - minecraft:item replace entity @p[gamemode=creative,distance=..500] hotbar.0 with minecraft:air
+        - delay= 20 execute as @p run createkit giveeventkit 10
+        - delay= 80 execute as @a[gamemode=survival,distance=..500] run kit giveeventkit
+        - delay= 80 execute as @p run cp ep item
+        - delay= 100 lp group events parent remove event_kit
+      '22':
+        material: lantern
+        stack: 1
+        name: 'SET gamerule doMobSpawning true'
+        commands:
+        - minecraft:gamerule doMobSpawning true   
+      '23':
+        material: soul_lantern
+        stack: 1
+        name: 'SET gamerule doMobSpawning false'
+        commands:
+        - minecraft:gamerule doMobSpawning false
+      '6':
+        material: VERDANT_FROGLIGHT
+        stack: 1
+        name: 'PVP TRUE'
+        commands:
+        - execute as @p run mvmodify set pvp true
+      '8':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&b&lOpen Event'
+        lore:
+        - '&5Allows all players to Join the Event World'
+        commands:
+        - tellraw @a {"text":"&cEVENT &8>> &n&fThe Event has opened use (/warp Event) to Join now!"}
+        - lp group events parent add join_event
+        - delay= 20 execute as @p run dh l set eventinfo 1 1  EVENT IS OPEN TO JOIN! /Warp Event 
+        - delay= 40 dh reload
+      '17':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&7&lClose Event'
+        lore:
+        - '&4Closes the Event Entry period'
+        commands:
+        - tellraw @a {"text":"&cEVENT &0>> &n&f The Event entry has Closed! Go watch the event with /live. "}
+        - lp group events parent remove join_event
+        - dh h enable eventinfo
+        - delay= 20 execute as @p run dh l set eventinfo 1 1   WAIT HERE FOR THE NEXT EVENT!<3 
+        - delay= 40 dh reload
+      '9':
+        material: CAKE
+        stack: 1
+        name: 'Heal and Feed *Everyone on the server*'
+        commands:
+        - execute as @p run heal *
+        - execute as @p run feed *
+      '10':
+        material: chest
+        stack: 1
+        name: 'Clear inv'
+        lore:
+        - 'Clear inventories of players in event.'
+        - 'players can bypass this with crafting slots best to'
+        commands:
+        - delay= 20 execute as @a[gamemode=survival,distance=..300] run clear
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..300] armor.chest with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..300] armor.feet with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..300] armor.head with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..300] armor.legs with minecraft:air
+        - delay= 20 minecraft:item replace entity @a[gamemode=survival,distance=..300] weapon.offhand with minecraft:air
+        #- delay= 40 minecraft:kill @e[type=item]
+      '11':
+        material: milk_bucket
+        stack: 1
+        name: 'Clear effects'
+        lore:
+        - 'Clear effects of players in event.'
+        commands:
+        - execute as @p run effect clear @a
+      '28':
+        material: apple
+        stack: 1
+        name: 'Start Event selective start '
+        lore:
+        - 'Allows fine selection of settings for events'
+        commands:
+        - lp group events parent add event_quickstart
+        - delay= 40 lp group event_quickstart parent remove start_event
+        #- execute as @a[gamemode=survival,distance=..500] run ch leave l
+      '29':
+        material: beetroot_soup
+        stack: 1
+        name: 'allow damage'
+        lore:
+        - 'Allows all players in event to give and take dammage'
+        commands:
+        - lp group start_event parent remove  event_takedamage
+      '30':
+        material: wooden_pickaxe
+        stack: 1
+        name: 'allow block interactions'
+        lore:
+        - 'Allows all players in event to edit world'
+        commands:
+        - lp group start_event parent remove event_modifyworld
+      '31':
+        material: stick
+        stack: 1
+        name: 'allow items interactions'
+        lore:
+        - 'Allows all players in event to use items'
+        commands:
+        - lp group start_event parent remove event_useitems 
+      '32':
+        material: shield
+        stack: 1
+        name: 'remove personal space'
+        lore:
+        - 'Allows all players to interact with other players'
+        commands:
+        - lp group start_event parent remove event_personalspace
+      '27':
+        material: GOLDEN_APPLE
+        stack: 1
+        name: 'All Powers and start event!'
+        lore:
+        - 'Allows all players to interact with the world and players'
+        commands:
+        - delay= 40 lp group event_quickstart parent remove start_event
+        #- execute as @a[gamemode=survival,distance=..500] run ch join l
+        - lp group events parent add event_quickstart
+      '54':
+        material: oak_sign
+        stack: 1
+        name: 'Allow communication'
+        lore:
+        - 'Allows all players to chat with other players'
+        commands:
+        - lp group start_event parent add event_chat
+        - delay= 100 execute as @a[gamemode=survival,distance=..500] run ch join l
+      '38':
+        material: wooden_sword
+        stack: 1
+        name: 'allow players to deal damage'
+        lore:
+        - 'Allows all players in event deal damage'
+        commands:
+        - lp group start_event parent remove event_dealdamage
+      '39':
+        material: bowl
+        stack: 1
+        name: 'make famine a thing'
+        lore:
+        - 'Allows all players to hunger'
+        commands:
+        - lp group start_event parent remove event_hunger
+        
+      '36':
+        material: chorus_fruit
+        stack: 1
+        name: 'Event unstart'
+        lore:
+        - 'remove permissions'
+        commands:
+        - delay= 40 lp group event_quickstart parent add start_event
+        - lp group events parent remove event_quickstart
+      '13':
+        material: cow_spawn_egg
+        stack: 1
+        name: 'REMOVE Passive Mobs'
+        commands:
+        - execute as @p run mv purge event animals
+      '14':
+        material: AZALEA
+        stack: 1
+        name: 'SET Normal Difficulty'
+        commands:
+        - execute as @p run mvm set diff normal
+      '15':
+        material: OCHRE_FROGLIGHT
+        stack: 1
+        name: 'PVP FALSE'
+        commands:
+        - execute as @p run mvmodify set pvp false
+      '18':
+        material: wheat_seeds
+        stack: 1
+        name: 'Clear ground items '
+        lore:
+        - 'Clear all grounds items in loaded chunks whole server'
+        commands:
+        - delay= 40 minecraft:kill @e[type=item]
+      '54':
+        material: RED_Mushroom
+        stack: 1
+        name: 'Settings'
+        commands:
+      '49':
+        material: WHITE_WOOL
+        stack: 1
+        name: '&8Event Worlds Panel'
+        commands:
+        - cp ep
+      '51':
+        material: BLUE_WOOL
+        stack: 1
+        name: 'Gamemodes'
+        commands:
+        - cp panel-4
+      '50':
+        material: LIME_WOOL
+        stack: 1
+        name: 'Event Start'
+      '52':
+        material: RED_WOOL
+        stack: 1
+        name: '&c&lEnd Event Panel'
+        commands:
+        - cp panel-2
+      '53':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc

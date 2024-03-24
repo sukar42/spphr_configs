@@ -1,0 +1,11 @@
+portals:
+  eventwarpgate:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: AstralHero
+    location: -17.0,31.0,148.0:-14.0,34.0,155.0
+    world: hub
+    destination: event

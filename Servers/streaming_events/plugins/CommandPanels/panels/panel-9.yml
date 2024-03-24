@@ -1,0 +1,37 @@
+panels:
+  panel-9:
+    perm: event
+    rows: 6
+    title: '&8Nether world gen'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '3':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate skygrid NETHER world Event'
+        commands:
+        - execute as @p run mv create event NETHER -g skygrid
+      '53':
+        material: WHITE_WOOL
+        stack: 1
+        name: 'Event Worlds Panel'
+        commands:
+        - cp ep
+      '0':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate NETHER world Event'
+        commands:
+        - execute as @p run mv create event NETHER Nether
+      '54':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Terra:TARTARUS Event'
+        commands:
+        - execute as @p run mv create event NETHER -g Terra:TARTARUS
+      '49':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc

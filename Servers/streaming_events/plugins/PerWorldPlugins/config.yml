@@ -1,0 +1,235 @@
+# PerWorldPlugins Configuration
+
+# Disable or Enable the message of new updates.
+updateChecker: true
+# Disable or Enable the bStats metrics.
+metrics: true
+# Message send when execute blocked plugin command.
+disabledCommandMessage: '&4[Server]: &fThis command is disabled for this world.'
+
+# If false, the plugins/groups added in the world will work.
+# If true, it will be reversed.
+blacklist: true
+
+plugins:
+  # For set group set - g:example (example is the name of group)
+  # Add and edit groups in the groups.yml
+  WorldFall:
+  - resources
+  - earth_nether
+  - earth_end
+  - earth
+  - hub
+  StayPut:
+  - event
+  Randomizer:
+  - resources
+  - earth_nether
+  - earth_end
+  - earth
+  - hub
+  skygrid:
+  - resources
+  - earth_nether
+  - earth_end
+  - earth
+  - hub
+  LuckPerms:
+  - Example
+  Vault:
+  - Example
+  NexEngine:
+  - Example
+  ProtocolLib:
+  - Example
+  PlayerPoints:
+  - Example
+  VoidGen:
+  - Example
+  FastAsyncWorldEdit:
+  - Example
+  T2CodeLib:
+  - Example
+  ExcellentEnchants:
+  - Example
+  PlugManX:
+  - Example
+  BlueSlimeCore:
+  - Example
+  UltimateAntiBot:
+  - Example
+  ConsoleSpamFix:
+  - Example
+  T2C-OPSecurity:
+  - Example
+  ViaVersion:
+  - Example
+  PlaceholderAPI:
+  - Example
+  Votifier:
+  - Example
+  LiteBans:
+  - Example
+  Essentials:
+  - Example
+  dynmap:
+  - Example
+  LibsDisguises:
+  - Example
+  HeadDatabase:
+  - Example
+  Multiverse-Core:
+  - Example
+  SuperVanish:
+  - Example
+  WorldGuard:
+  - Example
+  DecentHolograms:
+  - Example
+  CoreProtect:
+  - Example
+  ViaBackwards:
+  - Example
+  floodgate:
+  - Example
+  Multiverse-Inventories:
+  - Example
+  NBTAPI:
+  - Example
+  VotingPlugin:
+  - Example
+  Citizens:
+  - Example
+  AdvancedEnchantments:
+  - Example
+  Multiverse-Portals:
+  - Example
+  GSit:
+  - Example
+  TAB:
+  - Example
+  InvSeePlusPlus:
+  - Example
+  SupremeTags:
+  - Example
+  Geyser-Spigot:
+  - Example
+  ShopGUIPlus:
+  - Example
+  DiscordSRV:
+  - Example
+  spark:
+  - Example
+  GCore:
+  - Example
+  WorldBorder:
+  - Example
+  zAuctionHouseV3:
+  - Example
+  ChatEmojis:
+  - Example
+  Multiverse-NetherPortals:
+  - Example
+  SafariNet:
+  - Example
+  eGlow:
+  - Example
+  Syncus:
+  - Example
+  ChatColor2:
+  - Example
+  BetterRTP:
+  - Example
+  AfkPool:
+  - Example
+  InvSeePlusPlus_Give:
+  - Example
+  AdvancedItems:
+  - Example
+  Sapphire:
+  - Example
+  AntiPopup:
+  - Example
+  BuycraftX:
+  - Example
+  CommandAPI:
+  - Example
+  Sellwand:
+  - Example
+  ChatItem:
+  - Example
+  Analyse:
+  - Example
+  DeluxeMenus:
+  - Example
+  VoidTeleport:
+  - Example
+  ItemEdit:
+  - Example
+  PlayerWarps:
+  - Example
+  InvSeePlusPlus_Clear:
+  - Example
+  HubThat:
+  - resources
+  - earth_nether
+  - earth_end
+  - earth
+  EssentialsChat:
+  - Example
+  InventoryRollbackPlus:
+  - Example
+  NeoPerformance:
+  - Example
+  DailyRewardsPlus:
+  - Example
+  PlayerVaults:
+  - Example
+  PlayerStats:
+  - Example
+  EssentialsSpawn:
+  - Example
+  CommandPanels:
+  - Example
+  PlayerParticles:
+  - Example
+  pvparena:
+  - Example
+  ExcellentCrates:
+  - Example
+  ChestShop:
+  - Example
+  Vouchers:
+  - Example
+  GSlotMachine:
+  - Example
+  Chunky:
+  - Example
+  Modifyworld:
+  - Example
+  NoPlugins:
+  - Example
+  BloomAB:
+  - Example
+  Vegas:
+  - Example
+  AdvancedJobs:
+  - Example
+  NoEncryption:
+  - Example
+  Vulcan:
+  - Example
+  Terra:
+  - Example
+  EntityClearer:
+  - Example
+  Skygrid:
+  - Example
+  DisableCommands:
+  - Example
+  InvisibleItemFrames:
+  - Example
+  ArtMap:
+  - Example
+  Pl-Hide-Pro:
+  - Example

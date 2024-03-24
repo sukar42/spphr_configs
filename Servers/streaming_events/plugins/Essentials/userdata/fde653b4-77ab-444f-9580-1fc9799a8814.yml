@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 157.157.156.219
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1710191523026
+  login: 1710191495391
+money: '0'
+last-account-name: ArnarBolla07
+lastlocation:
+  world: e4f49f2a-bade-41ac-a5e9-c7c530e435e9
+  world-name: ArnarBolla071
+  x: 8.0
+  y: -272.17201639381824
+  z: 8.0
+  yaw: -56.415382385253906
+  pitch: -60.43230056762695
+logoutlocation:
+  world: fde0745c-5ce4-4299-8400-d39e4c1d9107
+  world-name: hub
+  x: 1.951596433665892
+  y: 99.0
+  z: 5.75116735635776
+  yaw: -43.68764114379883
+  pitch: 12.927472114562988

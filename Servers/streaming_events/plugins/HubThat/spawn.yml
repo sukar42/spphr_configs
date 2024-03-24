@@ -1,0 +1,19 @@
+spawn:
+  world:
+    hub: hub
+    event: hub
+  x:
+    hub: 0.5
+    event: 0.5
+  y:
+    hub: 99.0
+    event: 99.0
+  z:
+    hub: 0.5
+    event: 0.5
+  yaw:
+    hub: -0.03717198967933655
+    event: -0.03717198967933655
+  pitch:
+    hub: -0.14985372126102448
+    event: -0.14985372126102448

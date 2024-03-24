@@ -1,0 +1,340 @@
+panels:
+  panel-11:
+    perm: default
+    rows: 6
+    title: '&8pre Generated worlds page1'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate Voidworld Event'
+        commands:
+        - execute as @p run mvclone xEventxVoidworld event
+      '1':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Voidworld'
+        commands:
+        - execute as @p run mv import xEventxVoidworld normal CleanRoomGenerator
+      '2':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Voidworld'
+        commands:
+        - execute as @p run mvremove xEventxVoidworld
+      '3':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate Vintagelobby world Event'
+        commands:
+        - execute as @p run mvclone xEventxVintagelobby event
+      '4':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Vintagelobby'
+        commands:
+        - execute as @p run mv import xEventxVintagelobby normal normal
+      '5':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Vintagelobby'
+        commands:
+        - execute as @p run mvremove xEventxVintagelobby
+      '6':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate Planetoids world Event'
+        commands:
+        - execute as @p run mvclone xEventxPlanetoids event
+      '7':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Planetoids'
+        commands:
+        - execute as @p run mv import xEventxPlanetoids normal CleanRoomGenerator
+      '8':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Planetoids'
+        commands:
+        - execute as @p run mvremove xEventxPlanetoids
+      '9':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate SapphireArenas world Event'
+        commands:
+        - execute as @p run mvclone xEventxSapphireArenas event
+      '10':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load SapphireArenas'
+        commands:
+        - execute as @p run mv import xEventxSapphireArenas normal normal
+      '11':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload SapphireArenas'
+        commands:
+        - execute as @p run mvremove xEventxSapphireArenas
+      '12':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate MushroomArena world Event'
+        commands:
+        - execute as @p run mvclone xEventxMushroomArena event
+      '13':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load MushroomArena'
+        commands:
+        - execute as @p run mv import xEventxMushroomArena normal normal
+      '14':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload MushroomArena'
+        commands:
+        - execute as @p run mvremove xEventxMushroomArena
+      '15':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate Deepdarkgen world Event'
+        commands:
+        - execute as @p run mvclone xEventxDeepdarkgen event
+      '16':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Deepdarkgen'
+        commands:
+        - execute as @p run mv import xEventxDeepdarkgen normal normal
+      '17':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Deepdarkgen'
+        commands:
+        - execute as @p run mvremove xEventxDeepdarkgen
+      '18':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate FunLand world Event'
+        commands:
+        - execute as @p run mvclone xxFunLand event
+      '19':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load FunLand'
+        commands:
+        - execute as @p run mv import xxFunLand normal normal
+      '20':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload FunLand'
+        commands:
+        - execute as @p run mvremove xxFunLand
+      '21':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate lobby world Event'
+        commands:
+        - execute as @p run mvclone xxlobbyworldevent event
+      '22':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load lobbyworld'
+        commands:
+        - execute as @p run mv import xxlobbyworldevent normal normal
+      '23':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload lobbyworld'
+        commands:
+        - execute as @p run mvremove xxlobbyworldevent
+      '24':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate BigCity world Event'
+        commands:
+        - execute as @p run mvclone xxBigCity event
+      '25':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load BigCity'
+        commands:
+        - execute as @p run mv import xxBigCity normal normal
+      '26':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload BigCity'
+        commands:
+        - execute as @p run mvremove xxBigCity
+      '27':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Season1 world Event'
+        commands:
+        - execute as @p run mvclone xxSeason1 event
+      '28':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Season1'
+        commands:
+        - execute as @p run mv import xxSeason1 normal normal
+      '29':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Season1'
+        commands:
+        - execute as @p run mvremove xxSeason1
+      '30':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Spongebob world Event'
+        commands:
+        - execute as @p run mvclone xxSpongebob event
+      '31':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Spongebob'
+        commands:
+        - execute as @p run mv import xxSpongebob normal normal
+      '32':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Spongebob'
+        commands:
+        - execute as @p run mvremove xxSpongebob
+      '33':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate hub world Event'
+        commands:
+        - execute as @p run mvclone xxHub event
+      '34':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Hub'
+        commands:
+        - execute as @p run mv import xxHub normal normal
+      '35':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Hub'
+        commands:
+        - execute as @p run mvremove xxHub
+      '36':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Dropper world Event'
+        commands:
+        - execute as @p run mvclone xxDropper event
+      '37':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Dropper'
+        commands:
+        - execute as @p run mv import xxDropper normal normal
+      '38':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Dropper'
+        commands:
+        - execute as @p run mvremove xxDropper
+      '39':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Skylands aventure Event'
+        commands:
+        - execute as @p run mvclone xxSkylands event
+      '40':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Skylands aventure'
+        commands:
+        - execute as @p run mv import xxSkylands normal CleanRoomGenerator
+      '41':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Skylands aventure'
+        commands:
+        - execute as @p run mvremove xxSkylands
+      '42':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate deepdarkgen'
+        commands:
+        - execute as @p run mvclone xxdeepdarkgen event
+      '43':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load deepdarkgen'
+        commands:
+        - execute as @p run mv import xxdeepdarkgen normal normal
+      '44':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload deepdarkgen'
+        commands:
+        - execute as @p run mvremove xxdeepdarkgen
+      '45':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate parkour1'
+        commands:
+        - execute as @p run mvclone xxparkour1 event
+      '46':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load parkour1'
+        commands:
+        - execute as @p run mv import xxparkour1 normal normal
+      '47':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload parkour1'
+        commands:
+        - execute as @p run mvremove xxparkour1
+      '48':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Terra_Swoop_Force'
+        commands:
+        - execute as @p run mvclone xxTerra_Swoop_Force event
+      '49':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Terra_Swoop_Force'
+        commands:
+        - execute as @p run mv import xxTerra_Swoop_Force normal CleanRoomGenerator
+      '50':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Terra_Swoop_Force'
+        commands:
+        - execute as @p run mvremove xxTerra_Swoop_Force
+      '51':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&4&lDelete world Event'
+        lore:
+        - '&cWarning eject players from world first'
+        commands:
+        - execute as @p run mvunload event
+        - delay= 60 execute as @p run mvdelete event
+        - delay= 100 execute as @p run mv confirm
+      '52':
+        material: BOOK
+        stack: 1
+        name: 'PRE GEN World Page 2'
+        commands:
+        - cp panel-12
+      '53':
+        material: REDSTONE_BLOCK
+        stack: 1
+        name: 'unload all pregen'
+        commands:
+        - execute as @p run mvremove xEventxVoidworld
+        - execute as @p run mvremove xEventxMushroomArena
+        - execute as @p run mvremove xEventxPlanetoids
+        - execute as @p run mvremove xEventxDeepdarkgen
+        - execute as @p run mvremove xEventxVintagelobby
+        - execute as @p run mvremove xEventxSapphireArenas

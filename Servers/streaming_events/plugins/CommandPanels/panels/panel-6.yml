@@ -1,0 +1,80 @@
+panels:
+  panel-6:
+    perm: event
+    rows: 3
+    title: '&8World Gen Selection'
+    empty: BLACK_STAINED_GLASS_PANE
+    item: 
+      '6':
+        material: daylight_detector
+        stack: 1
+        name: '&a&lCreate skygrid world Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g skygrid
+      '53':
+        material: WHITE_WOOL
+        stack: 1
+        name: 'Event Worlds Panel'
+        commands:
+        - cp ep
+      '18':
+        material: LIME_glazed_terracotta
+        stack: 1
+        name: '&a&lCreate TerraOverworld Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g Terra:OVERWORLD
+      '54':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lCreate ParadiseLand world Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g ParadiseLand:eden.yml -t FLAT
+      '54':
+        material: flowering_azalea
+        stack: 1
+        name: '&a&lCreate Terra:SKYLANDS world Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g Terra:SKYLANDS
+
+      '0':
+        material: grass_block
+        stack: 1
+        name: '&a&lCreate NORMAL world Event'
+        commands:
+        - execute as @p run mv create event NORMAL NORMAL
+      '54':
+        material: azalea
+        stack: 1
+        name: '&a&lCreate Terra:AEROPELAGO world Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g Terra:AEROPELAGO
+      '54':
+        material: light_blue_glazed_terracotta
+        stack: 1
+        name: '&a&lCreate Terra:HYDRAXIA world Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g Terra:HYDRAXIA
+      '54':
+        material: sand
+        stack: 1
+        name: '&a&lCreate Oasisdesert world Event'
+        commands:
+        - execute as @p run mv create event NORMAL -g dwg-oasisdesert
+      '54':
+        material: orange_glazed_terracotta
+        stack: 1
+        name: '&a&lCreate Stratos world Event'
+        commands:
+        - execute as @p run mv create event normal -g Stratos
+      '54':
+        material: amethyst_block
+        stack: 1
+        name: '&a&lCreate TerraformGenerator world Event'
+        commands:
+        - execute as @p run mvcreate event normal -g TerraformGenerator
+      '26':
+        material: BARRIER
+        stack: 1
+        name: '&4Close'
+        commands:
+        - cpc

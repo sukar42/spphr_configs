@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.1.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1710175549538
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1710801176212
+  login: 1710801169441
+money: '0'
+last-account-name: AstralHero
+lastlocation:
+  world: 629f80ab-fbdb-4f06-b9c8-dd32b80c1a5d
+  world-name: event
+  x: -2.5
+  y: 108.17171994391961
+  z: 3.5
+  yaw: -53.400108337402344
+  pitch: 60.299842834472656
+logoutlocation:
+  world: fde0745c-5ce4-4299-8400-d39e4c1d9107
+  world-name: hub
+  x: 1.6744353015141717
+  y: 99.0
+  z: 6.443820811561235
+  yaw: 13.912851333618164
+  pitch: -7.649856090545654

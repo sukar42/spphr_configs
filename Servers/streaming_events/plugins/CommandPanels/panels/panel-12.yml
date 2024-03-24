@@ -1,0 +1,266 @@
+panels:
+  panel-12:
+    perm: default
+    rows: 6
+    title: '&8pre Generated worlds page2'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate The_draco_islands world Event'
+        commands:
+        - execute as @p run mvclone xxThe_draco_islands event
+      '1':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load The_draco_islands'
+        commands:
+        - execute as @p run mv import xxThe_draco_islands normal normal
+      '2':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload The_draco_islands'
+        commands:
+        - execute as @p run mvremove xxThe_draco_islands
+     
+      '3':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Mushroom Arena'
+        commands:
+        - execute as @p run mvclone XXMushroomArena event
+      '4':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load MushroomArena'
+        commands:
+        - execute as @p run mv import XXMushroomArena normal CleanRoomGenerator
+      '5':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload MushroomArena'
+        commands:
+        - execute as @p run mvremove XXMushroomArena
+
+     
+      '6':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate spookymaze Arena'
+        commands:
+        - execute as @p run mvclone xxspookymaze event
+      '7':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load spookymaze'
+        commands:
+        - execute as @p run mv import xxspookymaze normal CleanRoomGenerator
+      '8':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload spookymaze'
+        commands:
+        - execute as @p run mvremove xxspookymaze
+        name: ''
+      '9':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&a&lCreate Equestria'
+        commands:
+        - execute as @p run mvclone xxEquestria event
+      '10':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: 'Load Equestria'
+        commands:
+        - execute as @p run mv import xxEquestria normal CleanRoomGenerator
+      '11':
+        material: CAMPFIRE
+        stack: 1
+        name: 'unload Equestria'
+        commands:
+        - execute as @p run mvremove xxEquestria
+      '12':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '13':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '14':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '15':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '16':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '17':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '18':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '19':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '20':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '21':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '22':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '23':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '24':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '25':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '26':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '27':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '28':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '29':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '30':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '31':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '32':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '33':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '34':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '35':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '36':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '37':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '38':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '39':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '40':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '41':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '42':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '43':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '44':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '45':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '46':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '47':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '48':
+        material: GRAY_CONCRETE_POWDER
+        stack: 1
+        name: ''
+      '49':
+        material: SOUL_CAMPFIRE
+        stack: 1
+        name: ''
+      '50':
+        material: CAMPFIRE
+        stack: 1
+        name: ''
+      '51':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&4&lDelete world Event'
+        lore:
+        - '&cWarning eject players from world first'
+        commands:
+        - execute as @p run mvunload event
+        - delay= 60 execute as @p run mvdelete event
+        - delay= 100 execute as @p run mv confirm
+      '52':
+        material: BOOK
+        stack: 1
+        name: 'PRE GEN World Page 3'
+        commands:
+        - cp panel-13
+      '53':
+        material: REDSTONE_BLOCK
+        stack: 1
+        name: 'unload all pregen'
+        commands:
+        - execute as @p run mvremove xEventxVoidworld
+        - execute as @p run mvremove xEventxMushroomArena
+        - execute as @p run mvremove xEventxPlanetoids
+        - execute as @p run mvremove xEventxDeepdarkgen
+        - execute as @p run mvremove xEventxVintagelobby
+        - execute as @p run mvremove xEventxSapphireArenas
