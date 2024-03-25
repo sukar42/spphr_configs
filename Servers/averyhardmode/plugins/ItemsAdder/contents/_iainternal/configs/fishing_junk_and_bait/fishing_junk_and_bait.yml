@@ -1,0 +1,15 @@
+info:
+  namespace: fishing_junk_and_bait
+items:
+  old_waterlogged_boot:
+    display_name: Old Waterlogged Boot
+    resource:
+      material: AZURE_BLUET
+      generate: false
+      model_path: item/old_waterlogged_boot
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small_hitbox: true
+        solid: false

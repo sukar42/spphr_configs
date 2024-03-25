@@ -1,0 +1,2935 @@
+info:
+  namespace: customfish  
+items:
+  alligator_gar:
+    display_name: Alligator Gar
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/alligator_gar.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  altair:
+    display_name: Altair
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/altair.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  amber_jack:
+    display_name: Amberjack
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/amber_jack.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  anabas:
+    display_name: Anabas
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/anabas.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ancient_fish:
+    display_name: Ancient Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ancient_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  angelfish:
+    display_name: Angelfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/angelfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  angler_fish:
+    display_name: Angler Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/angler_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  arapaima:
+    display_name: Arapaima
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/arapaima.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  atlantic_cod:
+    display_name: Atlantic Cod
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/atlantic_cod.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  barbel:
+    display_name: Barbel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/barbel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  barracuda:
+    display_name: Barracuda
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/barracuda.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  bashful_angler:
+    display_name: Bashful Angler
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/bashful_angler.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  basic_fish:
+    display_name: Common Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/basic_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  bass:
+    display_name: Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  berry_fish:
+    display_name: Berry Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/berry_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  black_bean_fish:
+    display_name: Black Bean Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/black_bean_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  blackfin_tuna:
+    display_name: Blackfin Tuna
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/blackfin_tuna.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  blue_jellyfish:
+    display_name: Blue Jellyfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/blue_jellyfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  blue_tang:
+    display_name: Blue Tang
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/blue_tang.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  bream:
+    display_name: Bream
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/bream.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  carp:
+    display_name: Carp
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/carp.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  catfish:
+    display_name: Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  chaos_fish:
+    display_name: Chaos Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/chaos_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  city_fish:
+    display_name: City Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/city_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  clorofish:
+    display_name: Clorofish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/clorofish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1     
+  clownfish:
+    display_name: Clownfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/clownfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  colossal_catfish:
+    display_name: Colossal Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/colossal_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  colossal_squid:
+    display_name: Colossal Squid
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/colossal_squid.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  damsel:
+    display_name: Damsel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/damsel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  death_manta:
+    display_name: Death Manta
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/death_manta.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  devils_hole_pupfish:
+    display_name: Devils Hole Pupfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/devils_hole_pupfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  dinomite_fish:
+    display_name: Dinomite Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/dinomite_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  dobby:
+    display_name: Dobby
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/dobby.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ebon_koi:
+    display_name: Ebon Koi
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ebon_koi.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  e-boy_fish:
+    display_name: E-Boy Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/e-boy_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  eel:
+    display_name: Eel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/eel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  electric_eel:
+    display_name: Electric Eel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/electric_eel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  fairy_fish:
+    display_name: Fairy Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/fairy_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  firefin_koi:
+    display_name: Firefin Koi
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/firefin_koi.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  flounder:
+    display_name: Flounder
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/flounder.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  frost_minnow:
+    display_name: Frost Minnow
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/frost_minnow.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  galaxy_rasbora:
+    display_name: Galaxy Rasbora
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/galaxy_rasbora.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ghost_fish:
+    display_name: Ghost Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ghost_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  glacier_fish:
+    display_name: Glacier Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/glacier_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  goliath_tigerfish:
+    display_name: Goliath Tigerfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/goliath_tigerfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  goonch:
+    display_name: Goonch
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/goonch.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  grand_swordfish:
+    display_name: Grand Swordfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/grand_swordfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  great_fairy_fish:
+    display_name: Great Fairy Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/great_fairy_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  great_pink_salmon:
+    display_name: Great Pink Salmon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/great_pink_salmon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  great_white_shark:
+    display_name: Great WHile Shark
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/great_white_shark.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1  
+  greengill:
+    display_name: Greengill
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/greengill.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  grouper:
+    display_name: Grouper
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/grouper.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  halibut:
+    display_name: Halibut
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/halibut.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  hemopiranha:
+    display_name: Hemopiranha
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/hemopiranha.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  herring:
+    display_name: Herring
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/herring.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  honeyfin:
+    display_name: Honeyfin
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/honeyfin.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ice_pip:
+    display_name: Icepip
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ice_pip.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  iridescent_shark:
+    display_name: Iridescent Shark
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/iridescent_shark.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  jellyfish:
+    display_name: Jellyfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/jellyfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  kiwi_fish:
+    display_name: Kiwi Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/kiwi_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  koi:
+    display_name: Koi
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/koi.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  lava_fish:
+    display_name: Lava Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/lava_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  lingcod:
+    display_name: Lingcod
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/lingcod.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  mackerel:
+    display_name: Mackerel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mackerel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  man_o_war:
+    display_name: Man O War
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/man_o_war.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  marlin:
+    display_name: Marlin
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/marlin.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  midnight_squid:
+    display_name: Midnight Squid
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/midnight_squid.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  mooranha:
+    display_name: Mooranha
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mooranha.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  mud_crab:
+    display_name: Mud Crab
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mud_crab.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  mud_shark:
+    display_name: Mud shark
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mud_shark.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  neeko_fish:
+    display_name: Neeko Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/neeko_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  neon_tetra:
+    display_name: Neon Tetra
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/neon_tetra.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  nep_fish:
+    display_name: Nep Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/nep_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  nuptuna:
+    display_name: Nuptuna
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/nuptuna.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  octopus:
+    display_name: Octopus
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/octopus.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1  
+  ordon_catfish:
+    display_name: Ordon Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ordon_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pacu:
+    display_name: Pacu
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pacu.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  payara:
+    display_name: Payara
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/payara.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  perch:
+    display_name: Perch
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/perch.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pike:
+    display_name: Pike
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pike.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pink_jellyfish:
+    display_name: Pink Jellyfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pink_jellyfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  piranha:
+    display_name: Piranha
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/piranha.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pollock:
+    display_name: Pollock
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pollock.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  princess_fish:
+    display_name: Princess Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/princess_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  prismite:
+    display_name: Prismite
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/prismite.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  purple_fish:
+    display_name: Purple Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/purple_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pyro_fish:
+    display_name: Pyro Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pyro_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  rainbow_trout:
+    display_name: Rainbow Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/rainbow_trout.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  random_fish:
+    display_name: Random Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/random_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  red_bellied_piranha:
+    display_name: Red Bellied Piranha
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/red_bellied_piranha.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  red_jellyfish:
+    display_name: Red Jellyfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/red_jellyfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  red_lionfish:
+    display_name: Red Lionfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/red_lionfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  red_mullet:
+    display_name: Red Mullet
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/red_mullet.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  red_snapper:
+    display_name: Red Snapper
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/red_snapper.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  roach:
+    display_name: Roach
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/roach.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  rouge_fish:
+    display_name: Rouge Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/rouge_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ruby_barb:
+    display_name: Ruby Barb
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ruby_barb.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sardine:
+    display_name: Sardine
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sardine.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  screaming_goat_fish:
+    display_name: Screaming Goat Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/screaming_goat_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sea_bass:
+    display_name: Sea Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sea_bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1  
+  sergeant_major:
+    display_name: Sergeant Major
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sergeant_major.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  shrimp:
+    display_name: Shrimp
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/shrimp.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  slimejack:
+    display_name: Slimejack
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/slimejack.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  smooth_hound:
+    display_name: Smooth Hound
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/smooth_hound.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  spadefish:
+    display_name: Spadefish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/spadefish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  squid:
+    display_name: Squid
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/squid.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  stingray:
+    display_name: Stingray
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/stingray.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  stonefish:
+    display_name: Stonefish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/stonefish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  strawberry_tiger_barb:
+    display_name: Strawberry Tiger Barb
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/strawberry_tiger_barb.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sturgeon:
+    display_name: Sturgeon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sturgeon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  sunfish:
+    display_name: Sunfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sunfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tarpon:
+    display_name: Tarpon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tarpon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tench:
+    display_name: Tench
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tench.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tiger_shark:
+    display_name: Tiger Shark
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tiger_shark.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tiger_trout:
+    display_name: Tiger Trout
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tiger_trout.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tuna:
+    display_name: Tuna
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tuna.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  turbot:
+    display_name: Turbot
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/turbot.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  vampire_fish:
+    display_name: Vampire Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/vampire_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  void_salmon:
+    display_name: Void Salmon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/void_salmon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  wels_catfish:
+    display_name: Wels Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/wels_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  white_fish:
+    display_name: White Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/white_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  yeehaw_fish:
+    display_name: Yeehaw Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yeehaw_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  swordfish:
+    display_name: Swordfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/swordfish.png
+    events:
+      eat:
+        feed:
+          amount: 2
+          saturation: 1   
+  albacore:
+    display_name: Albacore
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/albacore.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  alex_the_fish:
+    display_name: Alex the Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/alex_the_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  arctic_char:
+    display_name: Arctic Char
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/arctic_char.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  black_cod:
+    display_name: Black Cod
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/black_cod.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  black_crappie:
+    display_name: Black Crappie
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/black_crappie.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  black_drum:
+    display_name: Black Drum
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/black_drum.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  black_sea_bass:
+    display_name: Black Sea Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/black_sea_bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  blue_catfish:
+    display_name: Blue Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/blue_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  blue_shrimp:
+    display_name: Blue Shrimp
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/blue_shrimp.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  bluegill_perch:
+    display_name: Bluegill Perch
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/bluegill_perch.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  box_jellyfish:
+    display_name: Box Jellyfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/box_jellyfish.png
+  brigitte_rasbora:
+    display_name: Brigitte Rasbora
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/brigitte_rasbora.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  brown_trout:
+    display_name: Brown Trout
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/brown_trout.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  bull_shark:
+    display_name: Bull Shark
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/bull_shark.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  bullhead_catfish:
+    display_name: Bullhead Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/bullhead_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  butterfish:
+    display_name: Butterfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/butterfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  channel_catfish:
+    display_name: Channel Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/channel_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  chevron_barracuda:
+    display_name: Chevron Barracuda
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/chevron_barracuda.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  chromis:
+    display_name: Chromis
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/chromis.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  chub:
+    display_name: Chub
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/chub.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  cichlid:
+    display_name: Cichlid
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/cichlid.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  common_lionfish:
+    display_name: Common Lionfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/common_lionfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  conger_eel:
+    display_name: Conger Eel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/conger_eel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  corkwing_wrasse:
+    display_name: Corkwing Wrasse
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/corkwing_wrasse.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  crevalle_jack:
+    display_name: Crevalle Jack
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/crevalle_jack.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1     
+  croaker:
+    display_name: Croaker
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/croaker.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  cunner:
+    display_name: Cunner
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/cunner.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  dolphinfish:
+    display_name: Dolphinfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/dolphinfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  dorado:
+    display_name: Dorado
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/dorado.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ender_trout:
+    display_name: Ender Trout
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ender_trout.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  fangtooth:
+    display_name: Fangtooth
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/fangtooth.png
+  flamefish:
+    display_name: Flamefish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/flamefish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  flapper:
+    display_name: Flapper
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/flapper.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  flying_fish:
+    display_name: Flying Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/flying_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  ghostly_anglerfish:
+    display_name: Ghostly Anglerfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ghostly_anglerfish.png        
+  giant_arapaima:
+    display_name: Giant Arapaima
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/giant_arapaima.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  giant_trevally:
+    display_name: Giant Trevally
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/giant_trevally.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  gramma:
+    display_name: Gramma
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/gramma.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  gray_mullet:
+    display_name: Gray Mullet
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/gray_mullet.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  grunion:
+    display_name: Grunion
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/grunion.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  gurnard:
+    display_name: Gurnard
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/gurnard.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  haddock:
+    display_name: Haddock
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/haddock.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  hamlet:
+    display_name: Hamlet
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/hamlet.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  honey_sunfish:
+    display_name: Honey Sunfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/honey_sunfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  humpback_anglerfish:
+    display_name: Humpback Anglerfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/humpback_anglerfish.png
+  jack:
+    display_name: Jack
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/jack.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  king_crab:
+    display_name: King Crab
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/king_crab.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  kingfish:
+    display_name: Kingfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/kingfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  largemouth_bass:
+    display_name: Largemouth Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/largemouth_bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1  
+  liniar_carp:
+    display_name: Liniar Carp
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/liniar_carp.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  minnow:
+    display_name: Minnow
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/minnow.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  northern_pike:
+    display_name: Northern Pike
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/northern_pike.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  parrotfish:
+    display_name: Parrotfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/parrotfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  phantom_fish:
+    display_name: Phantom Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/phantom_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pilchard:
+    display_name: Pilchard
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pilchard.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  plaice:
+    display_name: Plaice
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/plaice.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pompano:
+    display_name: Pompano
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pompano.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  porbeagle:
+    display_name: Porbeagle
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/porbeagle.png
+  porgy:
+    display_name: Porgy
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/porgy.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  pout:
+    display_name: Pout
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pout.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  pouting:
+    display_name: Pouting
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/pouting.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  powder_brown_tang:
+    display_name: Powder Brown Tang
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/powder_brown_tang.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  redgill:
+    display_name: Redgill
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/redgill.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  redtail_catfish:
+    display_name: Redtail Catfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/redtail_catfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  rock_bass:
+    display_name: Rock Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/rock_bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  rock_salmon:
+    display_name: Rock Salmon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/rock_salmon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  rockfish:
+    display_name: Rockfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/rockfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  rudd:
+    display_name: Rudd
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/rudd.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  saddleback_clownfish:
+    display_name: Saddleback Clownfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/saddleback_clownfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sailfish:
+    display_name: Sailfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sailfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sandbar_shark:
+    display_name: Sandbar Shark
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sandbar_shark.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  scorpionfish:
+    display_name: Scorpionfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/scorpionfish.png
+  sea_bream:
+    display_name: Sea Bream
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sea_bream.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sea_salmon:
+    display_name: Sea Salmon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sea_salmon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sea_trout:
+    display_name: Sea Trout
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sea_trout.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1  
+  seaweed:
+    display_name: Seaweed
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/seaweed.png
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  shovelnose_sturgeon:
+    display_name: Shovelnose Sturgeon
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/shovelnose_sturgeon.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  skipjack_tuna:
+    display_name: Skipjack Tuna
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/skipjack_tuna.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  smallmouth_bass:
+    display_name: Smallmouth Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/smallmouth_bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sole:
+    display_name: Sole
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sole.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  spotted_alligator_gar:
+    display_name: Spotted Alligator Gar
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/spotted_alligator_gar.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  sprat:
+    display_name: Sprat
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sprat.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  steve_the_fish:
+    display_name: Steve the Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/steve_the_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  stone_bass:
+    display_name: Stone Bass
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/stone_bass.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tarpon_snook:
+    display_name: Tarpon Snook
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tarpon_snook.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  tiger_barb:
+    display_name: Tiger Barb
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tiger_barb.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tigerfish:
+    display_name: Tigerfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tigerfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  tilapia:
+    display_name: Tilapia
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tilapia.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  triggerfish:
+    display_name: Triggerfish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/triggerfish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  vampire_squid:
+    display_name: Vampire Squid
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/vampire_squid.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  villager_fish:
+    display_name: Villager Fish
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/villager_fish.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  whiting:
+    display_name: Whiting
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/whiting.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  wolf_herring:
+    display_name: Wolf Herring
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/wolf_herring.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  wrasse:
+    display_name: Wrasse
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/wrasse.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  yellow_tang:
+    display_name: Yellow Tang
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yellow_tang.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  yellowfin_tuna:
+    display_name: Yellowfin Tuna
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yellowfin_tuna.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  yellowgill_perch:
+    display_name: Yellowgill Perch
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yellowgill_perch.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1          
+  yellowmouth_grouper:
+    display_name: Yellowmouth Grouper
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yellowmouth_grouper.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  yellowtail_damsel:
+    display_name: Yellowtail Damsel
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yellowtail_damsel.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  yellowtail_snapper:
+    display_name: Yellowtail Snapper
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/yellowtail_snapper.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+  mako:
+    display_name: Mako
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mako.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1   
+##############################################
+#speed
+  akadi:
+    display_name: 'Akadi'
+    lore:
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fSpeed for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/akadi.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: SPEED
+          duration: 500
+          amplifier: 0          
+#haste
+  tempest:
+    display_name: 'Tempest'
+    lore:
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fHaste for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tempest.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1        
+        potion_effect:
+          type: FAST_DIGGING
+          duration: 1000
+          amplifier: 0             
+#strength          
+  tempus:
+    display_name: 'Tempus'
+    lore:
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fStrength for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tempus.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1        
+        potion_effect:
+          type: INCREASE_DAMAGE
+          duration: 500
+          amplifier: 0             
+#jump          
+  ilmater:
+    display_name: 'ilmater'
+    lore:
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fJump for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/ilmater.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: JUMP
+          duration: 500
+          amplifier: 0             
+#fire resistance
+  kossuth:
+    display_name: 'Kossuth'
+    lore:
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fFire Resistance for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/kossuth.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: FIRE_RESISTANCE
+          duration: 500
+          amplifier: 0             
+#regeneration         
+  lathander:
+    display_name: 'lathander'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fRegeneration for 15 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/lathander.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1 
+        potion_effect:
+          type: REGENERATION
+          duration: 250
+          amplifier: 0             
+#resistance          
+  helm:
+    display_name: 'Helm'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fResistance for 60 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/helm.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: DAMAGE_RESISTANCE
+          duration: 1000
+          amplifier: 0             
+#water breathing
+  auril:
+    display_name: 'Auril'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fWater Breathing for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/auril.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: WATER_BREATHING
+          duration: 500
+          amplifier: 0             
+#invisibility
+  mask:
+    display_name: 'Mask'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fInvisibility for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mask.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: INVISIBILITY
+          duration: 500
+          amplifier: 0             
+#nightvision
+  lolth:
+    display_name: 'Lolth'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fNight Vision for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/lolth.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: NIGHT_VISION
+          duration: 500
+          amplifier: 0             
+#luck          
+  tymora:
+    display_name: 'Tymora'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fLuck for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/tymora.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: LUCK
+          duration: 500
+          amplifier: 0             
+#levitate          
+  mystra:
+    display_name: 'Mystra'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fLevitation for 15 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/mystra.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: LEVITATION
+          duration: 250
+          amplifier: 0             
+#DOLPHINS_GRACE
+  sashelas:
+    display_name: 'Sashelas'
+    lore:    
+    - '&aFeed&0: &f3'
+    - '&eSaturation&0: &f1'
+    - '&9Effect&0: &fDolphins Grace for 30 seconds'
+    resource:
+      material: COD
+      generate: true
+      textures:
+      - item/fish/sashelas.png
+    events:
+      eat:
+        feed:
+          amount: 3
+          saturation: 1
+        potion_effect:
+          type: DOLPHINS_GRACE
+          duration: 500
+          amplifier: 0                       

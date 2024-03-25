@@ -1,0 +1,74 @@
+info:
+  namespace: pyrofishitems
+recipes:
+  crafting_table:  
+items:
+  crab_claw:
+    display_name: Crab Claw
+    resource:
+      material: QUARTZ
+      generate: true
+      textures:
+      - item/crab_claw.png
+  crab_shell:
+    display_name: Crab Shell
+    resource:
+      material: GREEN_DYE
+      generate: true
+      textures:
+      - item/crab_shell.png
+  dolphin_tail:
+    display_name: Dolphin Tail
+    resource:
+      material: RABBIT_FOOT
+      generate: true
+      textures:
+      - item/dolphin_tail.png
+  entropy_crystal:
+    display_name: Entropy Crystal
+    resource:
+      material: IRON_NUGGET
+      generate: true
+      textures:
+      - item/entropy_crystal.png
+  squid_tentacle:
+    display_name: Squid Tentacle
+    resource:
+      material: INK_SAC
+      generate: true
+      textures:
+      - item/squid_tentacle.png
+
+  entropy_booster:
+    display_name: Entropy Booster
+    resource:
+      material: ENDER_EYE
+      generate: true
+      textures:
+      - item/entropy_booster.png
+  platinum_lure:
+    display_name: Platinum Lue
+    resource:
+      material: RED_DYE
+      generate: true
+      textures:
+      - item/platinum_lure.png
+  mythical_lure:
+    display_name: Mythical Lure
+    resource:
+      material: PURPLE_DYE
+      generate: true
+      textures:
+      - item/mythical_lure.png  
+  crab_lure:
+    display_name: Crab Lure
+    resource:
+      material: BLUE_DYE
+      generate: false
+      model_path: item/crab_lure     
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: true
+        solid: false

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:block/allium"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "fishing_junk_and_bait:item/worm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "fishing_junk_and_bait:item/clam"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "fishing_junk_and_bait:item/feather"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "fishing_junk_and_bait:item/attractor"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "fishing_junk_and_bait:item/spinner"
+    }
+  ]
+}

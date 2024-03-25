@@ -13,18 +13,18 @@ BaitLoreFormat: '&b%bait% &7has &3%uses% &7uses left.'
 Baits:
 
   #This can be anything, but this will be used to spawn it in. i.e /fish givebait example_bait <player> <amount>
-  example_bait:
+  worm:
     #If this bait should be enabled
-    enabled: false
+    enabled: true
     
     #Everything to do with the actual item
     item:
-      name: '&aExample Bait'
-      material: IRON_NUGGET
-      model_data: 0
+      name: '&aWorm'
+      material: ALLIUM
+      model_data: 1
       glowing: false
       lore:
-      - '&7Use this &aExample Bait &7to catch'
+      - '&7Use this &aWorm Bait &7to catch'
       - '&7new types of fish!'
       - ''
       - '&7This bait has &a%uses%&7 uses.'
@@ -32,12 +32,180 @@ Baits:
       - '&7Drag and drop onto your fishing rod to use.'
    
     #How many uses this bait has
-    uses: 50
+    uses: 5
 
     #Everything to do with the bait being in the shop.
     shop:
       #If the item should appear in the shop.
-      isShopItem: false
+      isShopItem: true
+      
+      #The permission to buy this bait. Leave empty for no permission.
+      permission: ''
+
+      #The cost to purchase this bait in money.
+      cost: 1000
+      
+      #If buying should require a minimum fishing level
+      minimumFishingLevel: 5
+
+    #What fish should this bait allow you to catch?
+    #The format here is the '<TIER:FISH_NUMBER>
+    #You can find the fish number by looking in the fish.yml
+    fish:
+    - 'BRONZE:1'
+    - 'BRONZE:2'
+    - 'BRONZE:3'
+    - 'BRONZE:4'
+    - 'BRONZE:5'
+    - 'BRONZE:6'
+    - 'BRONZE:7'
+    - 'BRONZE:8' 
+    - 'BRONZE:9'
+    - 'BRONZE:10'
+    - 'BRONZE:11'
+    - 'BRONZE:12' 
+    - 'BRONZE:13'
+    - 'BRONZE:14'
+    
+    
+    
+  clam:
+    #If this bait should be enabled
+    enabled: true
+    
+    #Everything to do with the actual item
+    item:    
+      name: '&aClam'
+      material: ALLIUM
+      model_data: 2
+      glowing: false
+      lore:
+      - '&7Use this &aClam Bait &7to catch'
+      - '&7new types of fish!'
+      - ''
+      - '&7This bait has &a%uses%&7 uses.'
+      - ''
+      - '&7Drag and drop onto your fishing rod to use.'
+   
+    #How many uses this bait has
+    uses: 5
+
+    #Everything to do with the bait being in the shop.
+    shop:
+      #If the item should appear in the shop.
+      isShopItem: true
+      
+      #The permission to buy this bait. Leave empty for no permission.
+      permission: ''
+
+      #The cost to purchase this bait in money.
+      cost: 2500
+      
+      #If buying should require a minimum fishing level
+      minimumFishingLevel: 20
+
+    #What fish should this bait allow you to catch?
+    #The format here is the '<TIER:FISH_NUMBER>
+    #You can find the fish number by looking in the fish.yml
+    fish:
+    - 'SILVER:1'
+    - 'SILVER:2'
+    - 'SILVER:3'
+    - 'SILVER:4'
+    - 'SILVER:5'
+    - 'SILVER:6'
+    - 'SILVER:7'
+    - 'SILVER:8' 
+    - 'SILVER:9'
+    - 'SILVER:10'
+    - 'SILVER:11'
+    - 'SILVER:12' 
+    - 'SILVER:13'
+    - 'SILVER:14' 
+    - 'SILVER:15' 
+
+  feather:
+    #If this bait should be enabled
+    enabled: true
+    
+    #Everything to do with the actual item
+    item:    
+      name: '&aFeather'
+      material: ALLIUM
+      model_data: 3
+      glowing: true
+      lore:
+      - '&7Use this &aFeather Bait &7to catch'
+      - '&7new types of fish!'
+      - ''
+      - '&7This bait has &a%uses%&7 uses.'
+      - ''
+      - '&7Drag and drop onto your fishing rod to use.'
+   
+    #How many uses this bait has
+    uses: 5
+
+    #Everything to do with the bait being in the shop.
+    shop:
+      #If the item should appear in the shop.
+      isShopItem: true
+      
+      #The permission to buy this bait. Leave empty for no permission.
+      permission: ''
+
+      #The cost to purchase this bait in money.
+      cost: 5000
+      
+      #If buying should require a minimum fishing level
+      minimumFishingLevel: 40
+
+    #What fish should this bait allow you to catch?
+    #The format here is the '<TIER:FISH_NUMBER>
+    #You can find the fish number by looking in the fish.yml
+    fish:
+    - 'GOLD:1'
+    - 'GOLD:2'
+    - 'GOLD:3'
+    - 'GOLD:4'
+    - 'GOLD:5'
+    - 'GOLD:6'
+    - 'GOLD:7'
+    - 'GOLD:8' 
+    - 'GOLD:9'
+    - 'GOLD:10'
+    - 'GOLD:11'
+    - 'GOLD:12' 
+    - 'GOLD:13'
+    - 'GOLD:14' 
+    - 'GOLD:15'  
+    - 'GOLD:16' 
+    - 'GOLD:17'    
+
+  attractor:
+    #If this bait should be enabled
+    enabled: true
+    
+    #Everything to do with the actual item
+    item:    
+      name: '&aAttractor'
+      material: ALLIUM
+      model_data: 4
+      glowing: true
+      lore:
+      - '&7Use this &aAttractor Bait &7to catch'
+      - '&7new types of fish!'
+      - ''
+      - '&7This bait has &a%uses%&7 uses.'
+      - ''
+      - '&7Drag and drop onto your fishing rod to use.'
+   
+    #How many uses this bait has
+    uses: 5
+
+    #Everything to do with the bait being in the shop.
+    shop:
+      #If the item should appear in the shop.
+      isShopItem: true
       
       #The permission to buy this bait. Leave empty for no permission.
       permission: ''
@@ -46,14 +214,100 @@ Baits:
       cost: 10000
       
       #If buying should require a minimum fishing level
-      minimumFishingLevel: 10
-      
-      #What slot the bait should be set to.
-      #If this is -1 or not present, it will be automatically assigned.
-      slot: -1
+      minimumFishingLevel: 80
 
     #What fish should this bait allow you to catch?
     #The format here is the '<TIER:FISH_NUMBER>
     #You can find the fish number by looking in the fish.yml
     fish:
-    - 'BRONZE:4'
+    - 'DIAMOND:1'
+    - 'DIAMOND:2'
+    - 'DIAMOND:3'
+    - 'DIAMOND:4'
+    - 'DIAMOND:5'
+    - 'DIAMOND:6'
+    - 'DIAMOND:7'
+    - 'DIAMOND:8' 
+    - 'DIAMOND:9'
+    - 'DIAMOND:10'
+    - 'DIAMOND:11'
+    - 'DIAMOND:12' 
+    - 'DIAMOND:13'
+    - 'DIAMOND:14' 
+    - 'DIAMOND:15'  
+    - 'DIAMOND:16' 
+    - 'DIAMOND:17'
+    - 'DIAMOND:18'
+    - 'DIAMOND:19'
+    - 'DIAMOND:20'
+    - 'DIAMOND:21'
+    - 'DIAMOND:22'
+    - 'DIAMOND:23'
+    - 'DIAMOND:24'
+    - 'DIAMOND:25' 
+    - 'DIAMOND:26'
+    - 'DIAMOND:27'    
+
+  spinner:
+    #If this bait should be enabled
+    enabled: true
+    
+    #Everything to do with the actual item
+    item:    
+      name: '&aSpinner'
+      material: ALLIUM
+      model_data: 5
+      glowing: true
+      lore:
+      - '&7Use this &aSpinner Bait &7to catch'
+      - '&7new types of fish!'
+      - ''
+      - '&7This bait has &a%uses%&7 uses.'
+      - ''
+      - '&7Drag and drop onto your fishing rod to use.'
+   
+    #How many uses this bait has
+    uses: 5
+
+    #Everything to do with the bait being in the shop.
+    shop:
+      #If the item should appear in the shop.
+      isShopItem: true
+      
+      #The permission to buy this bait. Leave empty for no permission.
+      permission: ''
+
+      #The cost to purchase this bait in money.
+      cost: 25000
+      
+      #If buying should require a minimum fishing level
+      minimumFishingLevel: 160
+
+    #What fish should this bait allow you to catch?
+    #The format here is the '<TIER:FISH_NUMBER>
+    #You can find the fish number by looking in the fish.yml
+    fish:
+    - 'PLATINUM:1'
+    - 'PLATINUM:2'
+    - 'PLATINUM:3'
+    - 'PLATINUM:4'
+    - 'PLATINUM:5'
+    - 'PLATINUM:6'
+    - 'PLATINUM:7'
+    - 'PLATINUM:8' 
+    - 'PLATINUM:9'
+    - 'PLATINUM:10'
+    - 'PLATINUM:11'
+    - 'PLATINUM:12' 
+    - 'PLATINUM:13'
+    - 'PLATINUM:14' 
+    - 'PLATINUM:15'  
+    - 'PLATINUM:16' 
+    - 'PLATINUM:17'
+    - 'PLATINUM:18'
+    - 'PLATINUM:19'
+    - 'PLATINUM:20'
+    - 'PLATINUM:21'
+
+
+##### no bait for mythical    
