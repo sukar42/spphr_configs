@@ -7,8 +7,6 @@
 #           \/                       \/            \/     \/        \//_____/                          
 #=======================================================================================================
 #                             Created by: PyroTempus
-#                             Config Version: v4.9.0
-#                             API-Version: 1.14.X - 1.20.X
 #========================================================================================================
 #
 #If you wish to use a language file inside of the /Language folder, replace the messages.yml with your
@@ -36,20 +34,20 @@ Settings:
     Prices:
       RawFishMoney: 50.00
       BronzeMoney: 100.00
-      SilverMoney: 550.00
-      GoldMoney: 1500.00
-      DiamondMoney: 5000.00
-      PlatinumMoney: 10000.00
-      MythicalMoney: 25000.00
+      SilverMoney: 250.00
+      GoldMoney: 500.00
+      DiamondMoney: 750.00
+      PlatinumMoney: 1000.00
+      MythicalMoney: 2500.00
     
     #Chance to catch a custom fish.
     ChanceToCatch:
-      Bronze: 60
-      Silver: 15
+      Bronze: 40
+      Silver: 20
       Gold: 5
-      Diamond: 1
-      Platinum: 0.2
-      Mythical: 0.04
+      Diamond: 2.5
+      Platinum: 1.5
+      Mythical: 0.5
    
     #These are some custom mobs
     CustomMobs:
@@ -145,6 +143,7 @@ Settings:
     
     #Catches a normal fish and a custom one at the same time.
     DisableNormalAndCustomCatch: false
+    DisableNormalAndCustomCatch: true
     
     #This will disable off-hand fishing.
     DisableOffHandFishing: false
@@ -290,6 +289,7 @@ BackArrows:
     enabled: false
     commands:
       - 'sudo %player% fish menu'
+ 
   Bait:
     enabled: false
     commands:
@@ -306,6 +306,7 @@ Entropy:
     Diamond: 350
     Platinum: 1250
     Mythical: 10000
+    Mythical: 5000
     
 #How much fishing xp they get from catching fish.
 FishingXP:
@@ -925,9 +926,11 @@ Totems:
       
     STAR_FALL:
       enabled: false
+      enabled: true
       unlock_level: 100
       slots_needed: 10
       value: 0
+      value: 0.5
       
     RANDOM_DROPS:
       enabled: true
@@ -1070,8 +1073,14 @@ CustomModelData:
       SquidTentacle: 0
       EntropyCrystal: 0
       PlatinumLure: 0
-      MythicalLure: 0
-      CrabLure: 0
-      EntropyBooster: 0
+      CrabClaw: 1       #material:quartz
+      CrabScales: 1     #material:green_dye
+      DolphinTail: 1    #material:rabbit_foot
+      SquidTentacle: 1  #material:iron_nugget
+      EntropyCrystal: 1 #material:ink_sac
+      PlatinumLure: 1   #material:red_dye
+      MythicalLure: 1   #material:purple_bye
+      CrabLure: 1       #material:blue_dye
+      EntropyBooster: 1 #material:ender_eye
     
 #========================================================================================================
