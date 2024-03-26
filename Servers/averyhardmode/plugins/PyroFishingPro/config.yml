@@ -66,7 +66,6 @@ Settings:
         
         #Enabling this will stop the crab from spawning and instead execute these commands.
         #%player% for the player. This also supports all PlaceholderAPI placeholders.
-        #Use %bobber_x/y/z% for the bobber location instead of the players location.
         CatchCommands:
           enabled: false
           commands:
